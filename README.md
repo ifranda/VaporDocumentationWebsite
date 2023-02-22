@@ -1,5 +1,5 @@
 # VaporDocumentationWebsite
-This repository holds the html files that are used to host [Vapor's documentation github page](https://github.com/NCAR/VaporDocumentationWebsite).
+This repository holds the html files that are used to host [Vapor's documentation github page](https://ncar.github.io/VaporDocumentationWebsite/).
 
 We use the Sphinx documentation generator to produce the html for the website.
 
