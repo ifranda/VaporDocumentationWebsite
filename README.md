@@ -1,5 +1,5 @@
 # VaporDocumentationWebsite
-This repository holds the html files that are used to host Vapor's documentation github page.
+This repository holds the html files that are used to host [Vapor's documentation github page](https://github.com/NCAR/VaporDocumentationWebsite).
 
 To reproduce this documentation locally, we recommend setting up a conda environment with the five dependencies listed below:
 
