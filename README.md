@@ -9,13 +9,15 @@ To reproduce this documentation locally, we recommend setting up a conda environ
     name: VaporDocumentationWebsite
     channels:
       - conda-forge
+      - ncar-vapor
       - defaults
     dependencies:
       - sphinx
-      - sphinx_rtd_theme
+      - sphinx-rtd-theme
       - sphinx-gallery
       - sphinx-book-theme
       - python=3.9
+      - vapor
 
 Once this conda environtment has been configured, the html can be generated with the following steps.
 
