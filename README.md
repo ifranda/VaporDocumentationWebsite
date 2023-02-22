@@ -1,10 +1,12 @@
 # VaporDocumentationWebsite
 This repository holds the html files that are used to host [Vapor's documentation github page](https://github.com/NCAR/VaporDocumentationWebsite).
 
-To reproduce this documentation locally, we recommend setting up a conda environment with the five dependencies listed below:
+We use the Sphinx documentation generator to produce the html for the website.
+
+To reproduce this documentation locally, we recommend setting up a conda environment with the five dependencies listed below.  Once installed, the .rst files located in the docs/ directory can be edited to produce new html.
 
     $ conda env export --from-history
-    name: readTheDocs
+    name: VaporDocumentationWebsite
     channels:
       - conda-forge
       - defaults
@@ -15,7 +17,7 @@ To reproduce this documentation locally, we recommend setting up a conda environ
       - sphinx-book-theme
       - python=3.9
 
-Once this has been configured, the html can be generated with the following steps.
+Once this conda environtment has been configured, the html can be generated with the following steps.
 
 1) git clone https://github.com/NCAR/VaporDocumentationWebsite.git 
 2) cd VaporDocumentationWebsite/docs
