@@ -19,8 +19,7 @@ Current Release
    pythonAPIReference
    YouTube Channel <https://www.youtube.com/channel/UCpf-d1GDO1sotzjJ2t_QkDw>
    Get Help on Our Forum <https://vapor.discourse.group>
-   contributing
-   licenseAndCitation
+   contributingToVapor
    citationAndLicense
 
 .. image:: _images/vaporBanner.png

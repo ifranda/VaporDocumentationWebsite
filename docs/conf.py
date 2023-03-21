@@ -191,11 +191,11 @@ sphinx_gallery_conf = {
 #
 
 userModules = [
+    'renderer',
     'animation',
     'annotations',
     'camera',
     'dataset',
-    'renderer',
     'session',
     'transferfunction',
     'transform'

@@ -4,7 +4,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
     <title>The vapor_wrf module &#8212;   3.8.0 documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -30,11 +31,10 @@
   <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <link rel="shortcut icon" href="../../_static/vaporVLogo.png"/>
+    <link rel="icon" href="../../_static/vaporVLogo.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="The vapor_utils module" href="vaporUtilsModule.html" />
@@ -75,11 +75,8 @@
         <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../index.html">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
-        
       
-      
-      <img src="../../_static/vaporLogoBlack.png" class="logo" alt="logo">
+      <img src="../../_static/../../_static/vaporLogoBlack.png" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">  3.8.0 documentation</h1>
@@ -533,17 +530,7 @@
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../createDataReader.html">
-     Creating a Data Reader
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../createRenderer.html">
-     Creating a Renderer
-    </a>
-   </li>
+  <ul class="simple">
   </ul>
  </li>
  <li class="toctree-l1">
@@ -719,12 +706,85 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vapor_wrf.ETH">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     ETH()
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vapor_wrf.RH">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     RH()
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vapor_wrf.SHEAR">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     SHEAR()
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vapor_wrf.SLP">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     SLP()
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vapor_wrf.TD">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     TD()
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vapor_wrf.TK">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     TK()
+    </span>
+   </code>
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -736,6 +796,68 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vapor_wrf.ETH">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     ETH()
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vapor_wrf.RH">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     RH()
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vapor_wrf.SHEAR">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     SHEAR()
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vapor_wrf.SLP">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     SLP()
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vapor_wrf.TD">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     TD()
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vapor_wrf.TK">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     TK()
+    </span>
+   </code>
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -743,8 +865,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="section" id="the-vapor-wrf-module">
-<h1>The vapor_wrf module<a class="headerlink" href="#the-vapor-wrf-module" title="Permalink to this headline">#</a></h1>
+  <section id="the-vapor-wrf-module">
+<h1>The vapor_wrf module<a class="headerlink" href="#the-vapor-wrf-module" title="Permalink to this heading">#</a></h1>
 <p>The vapor_wrf module comes with functions that are useful for WRF-ARW output.  For example, the following can be used to calculate relative humidity once the appropriate variables have been selected and a new <strong>relativeHumidity</strong> variable has been defined in the gui.  See below for all available functions.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">vapor_wrf</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="n">relativeHumidity</span> <span class="o">=</span> <span class="n">RH</span><span class="p">(</span><span class="n">P</span><span class="p">,</span> <span class="n">PB</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">QVAPOR</span><span class="p">)</span>
@@ -815,7 +937,7 @@ Where P,PB,T are WRF 3D variables, result TMP is a 3D variable
 indicating the temperature in degrees Kelvin.</p>
 </dd></dl>
 
-</div>
+</section>
 
 
               </div>

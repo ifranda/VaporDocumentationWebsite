@@ -4,7 +4,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
     <title>vapor.transform module &#8212;   3.8.0 documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -30,11 +31,10 @@
   <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <link rel="shortcut icon" href="../../_static/vaporVLogo.png"/>
+    <link rel="icon" href="../../_static/vaporVLogo.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="vapor.utils module" href="vapor.utils.html" />
@@ -75,11 +75,8 @@
         <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../index.html">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
-        
       
-      
-      <img src="../../_static/vaporLogoBlack.png" class="logo" alt="logo">
+      <img src="../../_static/../../_static/vaporLogoBlack.png" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">  3.8.0 documentation</h1>
@@ -533,17 +530,7 @@
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../createDataReader.html">
-     Creating a Data Reader
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../createRenderer.html">
-     Creating a Renderer
-    </a>
-   </li>
+  <ul class="simple">
   </ul>
  </li>
  <li class="toctree-l1">
@@ -719,12 +706,114 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vapor.transform.Transform">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     Transform
+    </span>
+   </code>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.transform.Transform.GetOrigin">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Transform.GetOrigin
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.transform.Transform.GetRotations">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Transform.GetRotations
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.transform.Transform.GetScales">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Transform.GetScales
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.transform.Transform.GetTranslations">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Transform.GetTranslations
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.transform.Transform.SetOrigin">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Transform.SetOrigin
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.transform.Transform.SetRotations">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Transform.SetRotations
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.transform.Transform.SetScales">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Transform.SetScales
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.transform.Transform.SetTranslations">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Transform.SetTranslations
+      </span>
+     </code>
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -736,6 +825,97 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vapor.transform.Transform">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     Transform
+    </span>
+   </code>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.transform.Transform.GetOrigin">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Transform.GetOrigin
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.transform.Transform.GetRotations">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Transform.GetRotations
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.transform.Transform.GetScales">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Transform.GetScales
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.transform.Transform.GetTranslations">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Transform.GetTranslations
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.transform.Transform.SetOrigin">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Transform.SetOrigin
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.transform.Transform.SetRotations">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Transform.SetRotations
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.transform.Transform.SetScales">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Transform.SetScales
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.transform.Transform.SetTranslations">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Transform.SetTranslations
+      </span>
+     </code>
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -743,12 +923,12 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="section" id="module-vapor.transform">
-<span id="vapor-transform-module"></span><h1>vapor.transform module<a class="headerlink" href="#module-vapor.transform" title="Permalink to this headline">#</a></h1>
+  <section id="module-vapor.transform">
+<span id="vapor-transform-module"></span><h1>vapor.transform module<a class="headerlink" href="#module-vapor.transform" title="Permalink to this heading">#</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="vapor.transform.Transform">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vapor.transform.</span></span><span class="sig-name descname"><span class="pre">Transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">cppyy.gbl.VAPoR.ParamsBase</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vapor.transform.Transform" title="Permalink to this definition">#</a></dt>
-<dd><p>Bases: <a class="reference internal" href="../devModules/vapor.params.html#vapor.params.ParamsWrapper" title="vapor.params.ParamsWrapper"><code class="xref py py-class docutils literal notranslate"><span class="pre">vapor.params.ParamsWrapper</span></code></a></p>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vapor.transform.</span></span><span class="sig-name descname"><span class="pre">Transform</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">p</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ParamsBase</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vapor.transform.Transform" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../devModules/vapor.params.html#vapor.params.ParamsWrapper" title="vapor.params.ParamsWrapper"><code class="xref py py-class docutils literal notranslate"><span class="pre">ParamsWrapper</span></code></a></p>
 <p>Wraps VAPoR::Transform
 class that indicates location and direction of view</p>
 <dl class="py attribute">
@@ -801,7 +981,7 @@ class that indicates location and direction of view</p>
 
 </dd></dl>
 
-</div>
+</section>
 
 
               </div>

@@ -4,7 +4,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
     <title>vapor.config module &#8212;   3.8.0 documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -30,11 +31,10 @@
   <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <link rel="shortcut icon" href="../../_static/vaporVLogo.png"/>
+    <link rel="icon" href="../../_static/vaporVLogo.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="vapor.cppyyDoxygenWrapper module" href="vapor.cppyyDoxygenWrapper.html" />
@@ -75,11 +75,8 @@
         <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../index.html">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
-        
       
-      
-      <img src="../../_static/vaporLogoBlack.png" class="logo" alt="logo">
+      <img src="../../_static/../../_static/vaporLogoBlack.png" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">  3.8.0 documentation</h1>
@@ -533,17 +530,7 @@
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../createDataReader.html">
-     Creating a Data Reader
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../createRenderer.html">
-     Creating a Renderer
-    </a>
-   </li>
+  <ul class="simple">
   </ul>
  </li>
  <li class="toctree-l1">
@@ -719,12 +706,103 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vapor.config.GetAllResources">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     GetAllResources()
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vapor.config.GetCompileDefinitions">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     GetCompileDefinitions()
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vapor.config.GetDoxygenRoot">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     GetDoxygenRoot()
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vapor.config.GetIncludeDirs">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     GetIncludeDirs()
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vapor.config.GetLibraryDirs">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     GetLibraryDirs()
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vapor.config.GetResource">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     GetResource()
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vapor.config.GetResourceSafe">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     GetResourceSafe()
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vapor.config.IsRunningFromIPython">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     IsRunningFromIPython()
+    </span>
+   </code>
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -736,6 +814,86 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vapor.config.GetAllResources">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     GetAllResources()
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vapor.config.GetCompileDefinitions">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     GetCompileDefinitions()
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vapor.config.GetDoxygenRoot">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     GetDoxygenRoot()
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vapor.config.GetIncludeDirs">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     GetIncludeDirs()
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vapor.config.GetLibraryDirs">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     GetLibraryDirs()
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vapor.config.GetResource">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     GetResource()
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vapor.config.GetResourceSafe">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     GetResourceSafe()
+    </span>
+   </code>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vapor.config.IsRunningFromIPython">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     IsRunningFromIPython()
+    </span>
+   </code>
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -743,8 +901,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="section" id="module-vapor.config">
-<span id="vapor-config-module"></span><h1>vapor.config module<a class="headerlink" href="#module-vapor.config" title="Permalink to this headline">#</a></h1>
+  <section id="module-vapor.config">
+<span id="vapor-config-module"></span><h1>vapor.config module<a class="headerlink" href="#module-vapor.config" title="Permalink to this heading">#</a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="vapor.config.GetAllResources">
 <span class="sig-prename descclassname"><span class="pre">vapor.config.</span></span><span class="sig-name descname"><span class="pre">GetAllResources</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">relPath</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vapor.config.GetAllResources" title="Permalink to this definition">#</a></dt>
@@ -786,7 +944,7 @@ title="Print to PDF"
 <span class="sig-prename descclassname"><span class="pre">vapor.config.</span></span><span class="sig-name descname"><span class="pre">IsRunningFromIPython</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#vapor.config.IsRunningFromIPython" title="Permalink to this definition">#</a></dt>
 <dd></dd></dl>
 
-</div>
+</section>
 
 
               </div>

@@ -4,7 +4,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
     <title>vapor.dataset module &#8212;   3.8.0 documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -30,11 +31,10 @@
   <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <link rel="shortcut icon" href="../../_static/vaporVLogo.png"/>
+    <link rel="icon" href="../../_static/vaporVLogo.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="vapor.renderer module" href="vapor.renderer.html" />
@@ -75,11 +75,8 @@
         <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../index.html">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
-        
       
-      
-      <img src="../../_static/vaporLogoBlack.png" class="logo" alt="logo">
+      <img src="../../_static/../../_static/vaporLogoBlack.png" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">  3.8.0 documentation</h1>
@@ -533,17 +530,7 @@
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../createDataReader.html">
-     Creating a Data Reader
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../createRenderer.html">
-     Creating a Renderer
-    </a>
-   </li>
+  <ul class="simple">
   </ul>
  </li>
  <li class="toctree-l1">
@@ -719,12 +706,206 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vapor.dataset.Dataset">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     Dataset
+    </span>
+   </code>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.dataset.Dataset.GetCoordVarNames">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Dataset.GetCoordVarNames
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.dataset.Dataset.GetDataRange">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Dataset.GetDataRange()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.dataset.Dataset.GetDataVarNames">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Dataset.GetDataVarNames
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.dataset.Dataset.GetDatasetTypes">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Dataset.GetDatasetTypes()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.dataset.Dataset.GetDimensionLength">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Dataset.GetDimensionLength
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.dataset.Dataset.GetDimensionNames">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Dataset.GetDimensionNames
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.dataset.Dataset.GetName">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Dataset.GetName()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.dataset.Dataset.GetNumTimeSteps">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Dataset.GetNumTimeSteps
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.dataset.Dataset.GetTimeCoordVarName">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Dataset.GetTimeCoordVarName
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.dataset.Dataset.GetTransform">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Dataset.GetTransform()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.dataset.Dataset.GetVarCoordVars">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Dataset.GetVarCoordVars
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.dataset.Dataset.GetVarGeometryDim">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Dataset.GetVarGeometryDim
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.dataset.Dataset.GetVarTopologyDim">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Dataset.GetVarTopologyDim
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.dataset.Dataset.IsTimeVarying">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Dataset.IsTimeVarying
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.dataset.Dataset.NewRenderer">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Dataset.NewRenderer()
+      </span>
+     </code>
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vapor.dataset.PythonDataset">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     PythonDataset
+    </span>
+   </code>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.dataset.PythonDataset.AddNumpyData">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       PythonDataset.AddNumpyData()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.dataset.PythonDataset.AddXArrayData">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       PythonDataset.AddXArrayData()
+      </span>
+     </code>
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -736,6 +917,189 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vapor.dataset.Dataset">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     Dataset
+    </span>
+   </code>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.dataset.Dataset.GetCoordVarNames">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Dataset.GetCoordVarNames
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.dataset.Dataset.GetDataRange">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Dataset.GetDataRange()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.dataset.Dataset.GetDataVarNames">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Dataset.GetDataVarNames
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.dataset.Dataset.GetDatasetTypes">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Dataset.GetDatasetTypes()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.dataset.Dataset.GetDimensionLength">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Dataset.GetDimensionLength
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.dataset.Dataset.GetDimensionNames">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Dataset.GetDimensionNames
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.dataset.Dataset.GetName">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Dataset.GetName()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.dataset.Dataset.GetNumTimeSteps">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Dataset.GetNumTimeSteps
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.dataset.Dataset.GetTimeCoordVarName">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Dataset.GetTimeCoordVarName
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.dataset.Dataset.GetTransform">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Dataset.GetTransform()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.dataset.Dataset.GetVarCoordVars">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Dataset.GetVarCoordVars
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.dataset.Dataset.GetVarGeometryDim">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Dataset.GetVarGeometryDim
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.dataset.Dataset.GetVarTopologyDim">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Dataset.GetVarTopologyDim
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.dataset.Dataset.IsTimeVarying">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Dataset.IsTimeVarying
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.dataset.Dataset.NewRenderer">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       Dataset.NewRenderer()
+      </span>
+     </code>
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#vapor.dataset.PythonDataset">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     PythonDataset
+    </span>
+   </code>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.dataset.PythonDataset.AddNumpyData">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       PythonDataset.AddNumpyData()
+      </span>
+     </code>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vapor.dataset.PythonDataset.AddXArrayData">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       PythonDataset.AddXArrayData()
+      </span>
+     </code>
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -743,12 +1107,12 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="section" id="module-vapor.dataset">
-<span id="vapor-dataset-module"></span><h1>vapor.dataset module<a class="headerlink" href="#module-vapor.dataset" title="Permalink to this headline">#</a></h1>
+  <section id="module-vapor.dataset">
+<span id="vapor-dataset-module"></span><h1>vapor.dataset module<a class="headerlink" href="#module-vapor.dataset" title="Permalink to this heading">#</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="vapor.dataset.Dataset">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vapor.dataset.</span></span><span class="sig-name descname"><span class="pre">Dataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataMgr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">cppyy.gbl.VAPoR.DataMgr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ses</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vapor.dataset.Dataset" title="Permalink to this definition">#</a></dt>
-<dd><p>Bases: <a class="reference internal" href="../devModules/vapor.smartwrapper.html#vapor.smartwrapper.SmartWrapper" title="vapor.smartwrapper.SmartWrapper"><code class="xref py py-class docutils literal notranslate"><span class="pre">vapor.smartwrapper.SmartWrapper</span></code></a></p>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vapor.dataset.</span></span><span class="sig-name descname"><span class="pre">Dataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataMgr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataMgr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ses</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vapor.dataset.Dataset" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="../devModules/vapor.smartwrapper.html#vapor.smartwrapper.SmartWrapper" title="vapor.smartwrapper.SmartWrapper"><code class="xref py py-class docutils literal notranslate"><span class="pre">SmartWrapper</span></code></a></p>
 <p>Wraps VAPoR::DataMgr
 A cache based data reader.</p>
 <blockquote>
@@ -897,30 +1261,30 @@ This method returns true if the variable named by varname is defined and it has 
 
 <dl class="py method">
 <dt class="sig sig-object py" id="vapor.dataset.Dataset.NewRenderer">
-<span class="sig-name descname"><span class="pre">NewRenderer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Class</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="vapor.renderer.html#vapor.renderer.Renderer" title="vapor.renderer.Renderer"><span class="pre">vapor.renderer.Renderer</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="vapor.renderer.html#vapor.renderer.Renderer" title="vapor.renderer.Renderer"><span class="pre">vapor.renderer.Renderer</span></a></span></span><a class="headerlink" href="#vapor.dataset.Dataset.NewRenderer" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">NewRenderer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Class</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="vapor.renderer.html#vapor.renderer.Renderer" title="vapor.renderer.Renderer"><span class="pre">Renderer</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="vapor.renderer.html#vapor.renderer.Renderer" title="vapor.renderer.Renderer"><span class="pre">Renderer</span></a></span></span><a class="headerlink" href="#vapor.dataset.Dataset.NewRenderer" title="Permalink to this definition">#</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="vapor.dataset.PythonDataset">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vapor.dataset.</span></span><span class="sig-name descname"><span class="pre">PythonDataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataMgr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">cppyy.gbl.VAPoR.DataMgr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ses</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vapor.dataset.PythonDataset" title="Permalink to this definition">#</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#vapor.dataset.Dataset" title="vapor.dataset.Dataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">vapor.dataset.Dataset</span></code></a></p>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vapor.dataset.</span></span><span class="sig-name descname"><span class="pre">PythonDataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataMgr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataMgr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ses</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vapor.dataset.PythonDataset" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#vapor.dataset.Dataset" title="vapor.dataset.Dataset"><code class="xref py py-class docutils literal notranslate"><span class="pre">Dataset</span></code></a></p>
 <p>Wraps VAPoR::PythonDataMgr
 DataMgr for data loaded from python scripts.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="vapor.dataset.PythonDataset.AddNumpyData">
-<span class="sig-name descname"><span class="pre">AddNumpyData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">numpy.ndarray</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vapor.dataset.PythonDataset.AddNumpyData" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">AddNumpyData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">ndarray</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vapor.dataset.PythonDataset.AddNumpyData" title="Permalink to this definition">#</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="vapor.dataset.PythonDataset.AddXArrayData">
-<span class="sig-name descname"><span class="pre">AddXArrayData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">varName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">xarray.core.dataarray.DataArray</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vapor.dataset.PythonDataset.AddXArrayData" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">AddXArrayData</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">varName</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arr</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataArray</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vapor.dataset.PythonDataset.AddXArrayData" title="Permalink to this definition">#</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
 
-</div>
+</section>
 
 
               </div>

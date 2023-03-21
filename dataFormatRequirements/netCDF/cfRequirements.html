@@ -4,7 +4,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
     <title>NetCDF-CF Requirements &#8212;   3.8.0 documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
@@ -30,11 +31,10 @@
   <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <link rel="shortcut icon" href="../../_static/vaporVLogo.png"/>
+    <link rel="icon" href="../../_static/vaporVLogo.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Examples" href="examples/index.html" />
@@ -75,11 +75,8 @@
         <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../index.html">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
-        
       
-      
-      <img src="../../_static/vaporLogoBlack.png" class="logo" alt="logo">
+      <img src="../../_static/../../_static/vaporLogoBlack.png" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">  3.8.0 documentation</h1>
@@ -533,17 +530,7 @@
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../createDataReader.html">
-     Creating a Data Reader
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../../createRenderer.html">
-     Creating a Renderer
-    </a>
-   </li>
+  <ul class="simple">
   </ul>
  </li>
  <li class="toctree-l1">
@@ -800,24 +787,28 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="section" id="netcdf-cf-requirements">
-<span id="cfrequirements"></span><h1>NetCDF-CF Requirements<a class="headerlink" href="#netcdf-cf-requirements" title="Permalink to this headline">#</a></h1>
-<div class="section" id="coordinate-variables">
-<span id="coordinatevariables"></span><h2>Coordinate variables<a class="headerlink" href="#coordinate-variables" title="Permalink to this headline">#</a></h2>
+  <section id="netcdf-cf-requirements">
+<span id="cfrequirements"></span><h1>NetCDF-CF Requirements<a class="headerlink" href="#netcdf-cf-requirements" title="Permalink to this heading">#</a></h1>
+<section id="coordinate-variables">
+<span id="coordinatevariables"></span><h2>Coordinate variables<a class="headerlink" href="#coordinate-variables" title="Permalink to this heading">#</a></h2>
 <p>Vapor requires variables that describe the physical coordinates of netCDF data.</p>
 <p>If your data is on a rectilinear grid, these variables should be 1D arrays that specify monotonically increasing grid points along an axis.  These variables are referred to as <code class="docutils literal notranslate"><span class="pre">coordinate</span> <span class="pre">variables</span></code> if their names match the dimension they refer to.</p>
-<div class="align-center figure" id="id1">
+<figure class="align-center" id="id1">
 <img alt="../../_images/rectilinearCompliant.png" src="../../_images/rectilinearCompliant.png" />
-<p class="caption"><span class="caption-text">A CF Compliant netCDF header with 1D coordinate variables (x, y, and z), named the same as their dimension.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">A CF Compliant netCDF header with 1D coordinate variables (x, y, and z), named the same as their dimension.</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 <p>If your grid is curvilinear, coordinate variables are not sufficient to describe the 2D physical coordinates of your grid.  In this case, the CF Conventions define <code class="docutils literal notranslate"><span class="pre">auxiliary</span> <span class="pre">coordinate</span> <span class="pre">variables</span></code>, which do not have the same name as their dimensions.  <code class="docutils literal notranslate"><span class="pre">auxiliary</span> <span class="pre">coordinate</span> <span class="pre">variables</span></code> must have an <code class="docutils literal notranslate"><span class="pre">axis</span></code> and <code class="docutils literal notranslate"><span class="pre">units</span></code> attribute.  Additionally, any variable that is mapped to these coordinates must specify a <code class="docutils literal notranslate"><span class="pre">coordinates</span></code> attribute that points the their <code class="docutils literal notranslate"><span class="pre">auxiallary</span> <span class="pre">coordinate</span> <span class="pre">variables</span></code>.  For example:</p>
-<div class="align-center figure" id="id2">
+<figure class="align-center" id="id2">
 <img alt="../../_images/curvilinearCompliant.png" src="../../_images/curvilinearCompliant.png" />
-<p class="caption"><span class="caption-text">A 8x8x8 curvilinear grid, with physical coordinates defined as 2D auxiliary coordinate variables.  Note that the sphere variable specifies its auxiliary coordinate variables “X_Coord Y_Coord “Z_Coord” with the coordinates attribute.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
-</div>
-</div>
-<div class="section" id="the-axis-attribute">
-<span id="theaxisattribute"></span><h2>The axis attribute<a class="headerlink" href="#the-axis-attribute" title="Permalink to this headline">#</a></h2>
+<figcaption>
+<p><span class="caption-text">A 8x8x8 curvilinear grid, with physical coordinates defined as 2D auxiliary coordinate variables.  Note that the sphere variable specifies its auxiliary coordinate variables “X_Coord Y_Coord “Z_Coord” with the coordinates attribute.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="the-axis-attribute">
+<span id="theaxisattribute"></span><h2>The axis attribute<a class="headerlink" href="#the-axis-attribute" title="Permalink to this heading">#</a></h2>
 <p>We strongly recommend that each coordinate variable have <code class="docutils literal notranslate"><span class="pre">axis</span></code> attribute as follows:</p>
 <blockquote>
 <div><ul class="simple">
@@ -831,9 +822,9 @@ title="Print to PDF"
 <p class="admonition-title">Note</p>
 <p>Coordinate variables do not require an <code class="docutils literal notranslate"><span class="pre">axis</span></code> attribute if its axis can be inferred by a <code class="docutils literal notranslate"><span class="pre">units</span></code> attribute.  For example, a coordinate variable with a <code class="docutils literal notranslate"><span class="pre">units</span></code> attribute of <code class="docutils literal notranslate"><span class="pre">degreesEast</span></code> would infer that it’s aligned with the with X axis, and no <code class="docutils literal notranslate"><span class="pre">axis</span></code> attribute is needed.</p>
 </div>
-</div>
-<div class="section" id="the-units-attribute">
-<span id="theunitsattribute"></span><h2>The units attribute<a class="headerlink" href="#the-units-attribute" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="the-units-attribute">
+<span id="theunitsattribute"></span><h2>The units attribute<a class="headerlink" href="#the-units-attribute" title="Permalink to this heading">#</a></h2>
 <p>The Time coordinate variable <strong>must</strong> have a <code class="docutils literal notranslate"><span class="pre">units</span></code> attribute which can be identifiable by the Udunits library.  Suitable <code class="docutils literal notranslate"><span class="pre">units</span></code> attributes include:</p>
 <blockquote>
 <div><ul class="simple">
@@ -853,8 +844,8 @@ title="Print to PDF"
 </ul>
 </div></blockquote>
 <p>Variables with missing data values must have the attribute <em>_FillValue</em> or <em>missing_value</em> specified.  See section 2.5.1 of the CF 1.6 specification for more information.</p>
-</div>
-</div>
+</section>
+</section>
 
 
               </div>
