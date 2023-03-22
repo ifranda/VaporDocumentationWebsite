@@ -12,7 +12,7 @@ To reproduce this documentation locally, we recommend setting up a conda environ
       - ncar-vapor
       - defaults
     dependencies:
-      - sphinx
+      - sphinx=5.3.0
       - sphinx-rtd-theme
       - sphinx-gallery
       - sphinx-book-theme

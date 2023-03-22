@@ -31,10 +31,13 @@
   <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/sphinx_highlight.js"></script>
     <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <link rel="icon" href="../../_static/vaporVLogo.png"/>
+    <link rel="shortcut icon" href="../../_static/vaporVLogo.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="vapor.link module" href="vapor.link.html" />
@@ -75,8 +78,11 @@
         <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../index.html">
       
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
       
-      <img src="../../_static/../../_static/vaporLogoBlack.png" class="logo" alt="logo">
+      
+      <img src="../../_static/vaporLogoBlack.png" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">  3.8.0 documentation</h1>
@@ -522,7 +528,7 @@
   </a>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../../contributing.html">
+  <a class="reference internal" href="../../contributingToVapor.html">
    Contributing to Vapor
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
@@ -530,7 +536,39 @@
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="simple">
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../contributingToVapor/whereToStart.html">
+     Where to start?
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../contributingToVapor/bugReportsAndFeatureRequests.html">
+     Bug Reports and Feature Requests
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../contributingToVapor/codeContributions.html">
+     Code Contributions
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+    <label for="toctree-checkbox-16">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="simple">
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../contributingToVapor/contributingToVaporsDocumentation.html">
+     Contributing to Vapor’s Documentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../contributingToVapor/contributingToVaporsGallery.html">
+     Contributing to Vapor’s Gallery
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1">
@@ -779,7 +817,7 @@ title="Print to PDF"
 <span id="vapor-cppyydoxygenwrapper-module"></span><h1>vapor.cppyyDoxygenWrapper module<a class="headerlink" href="#module-vapor.cppyyDoxygenWrapper" title="Permalink to this heading">#</a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="vapor.cppyyDoxygenWrapper.CPPYYDoxygenWrapperMeta">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vapor.cppyyDoxygenWrapper.</span></span><span class="sig-name descname"><span class="pre">CPPYYDoxygenWrapperMeta</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">clsname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bases</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clsdict</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrap</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">type</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vapor.cppyyDoxygenWrapper.CPPYYDoxygenWrapperMeta" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vapor.cppyyDoxygenWrapper.</span></span><span class="sig-name descname"><span class="pre">CPPYYDoxygenWrapperMeta</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">clsname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bases</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clsdict</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">wrap</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">type</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vapor.cppyyDoxygenWrapper.CPPYYDoxygenWrapperMeta" title="Permalink to this definition">#</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">type</span></code></p>
 </dd></dl>
 
