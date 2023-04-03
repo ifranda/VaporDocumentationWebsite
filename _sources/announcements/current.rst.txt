@@ -3,4 +3,4 @@
 Current Release
 ---------------
 
-.. include:: 3.8.0.rst
+.. include:: 3.8.1.rst
