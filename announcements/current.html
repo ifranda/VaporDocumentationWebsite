@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>Current Release &#8212;   3.8.0 documentation</title>
+    <title>Current Release &#8212;   3.8.1 documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -85,7 +85,7 @@
       <img src="../_static/vaporLogoBlack.png" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">  3.8.0 documentation</h1>
+      <h1 class="site-logo" id="site-title">  3.8.1 documentation</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
@@ -770,43 +770,37 @@ title="Print to PDF"
                 
   <section id="current-release">
 <span id="current"></span><h1>Current Release<a class="headerlink" href="#current-release" title="Permalink to this heading">#</a></h1>
-<p id="id1">January 10, 2023 - Vapor 3.8.0</p>
-<p><a class="reference external" href="https://forms.gle/xLGwLgYSiABbHe8t8">Download here</a></p>
-<p>Thank you to our users for reporting bugs, feature requests, and questions <a class="reference external" href="https://vapor.discourse.group/">to our forum</a>.  We really appreciate it!</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2DwsJSKmio4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><div class="line-block">
-<div class="line"><br /></div>
-</div>
+<p id="id1"><a class="reference external" href="https://forms.gle/xLGwLgYSiABbHe8t8">Download here</a></p>
+<p>March 28, 2023</p>
+<p>Vapor 3.8.1 is now live and includes the enhancements and fixed issues below. Further documentation for Vapor’s scriptable PythonAPI has been added as and <a class="reference external" href="https://ncar.github.io/VaporDocumentationWebsite/pythonAPIReference.html">can be found here</a>. Stay tuned for upcoming tutorials on this new API and please reach out to us on our forum if you have any questions.</p>
 <p><strong>New Enhancements</strong></p>
-<ul>
-<li><p>3157 - Jupyter Widgets can now be embedded in Jupyter notebook sessions running Vapor’s Python API, and Jupyter notebook visualizers are now interactive so the camera can be repositioned from within a running notebook.</p>
-<p>To install Vapor’s Python API:</p>
 <ul class="simple">
-<li><p>Install <a class="reference external" href="https://anaconda.org/">Anaconda</a></p></li>
-<li><p>Run the following commands:</p></li>
+<li><p>3312 - Graphics Memory Detection</p></li>
 </ul>
-</li>
-</ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">vapor</span> <span class="n">python</span><span class="o">=</span><span class="mf">3.9</span>
-<span class="n">conda</span> <span class="n">activate</span> <span class="n">vapor</span>
-<span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="o">-</span><span class="n">c</span> <span class="n">ncar</span><span class="o">-</span><span class="n">vapor</span> <span class="n">vapor</span>
-</pre></div>
-</div>
+<p><strong>Fixed Issues</strong></p>
 <ul class="simple">
-<li><p>3230 - Allow user to load and save camera viewpoint as a file</p></li>
+<li><p>3345 - Python API direct parameter access not working</p></li>
+<li><p>3343 - Python Renderer class missing global opacity controls</p></li>
+<li><p>3335 - Bad documentation page</p></li>
+<li><p>3325 - Flow: Pathlines seem to never stop advecting</p></li>
+<li><p>3318 - Flow deltaT calculation on mostly zero fields</p></li>
+<li><p>3315 - Python API documentation overhaul</p></li>
+<li><p>3313 - Bundle libxinerama in Ubuntu 22</p></li>
+<li><p>3311 - Journal article should be cited</p></li>
+<li><p>3306 - ZFP compressed NetCDF files do NOT open with VAPOR 3.7.0</p></li>
+<li><p>3305 - Trajectory trace files have a time precision of 1 second, the time of subsecond trajectory data is truncated</p></li>
+<li><p>3304 - Documentation is wrong about the vector field multiplier</p></li>
+<li><p>3296 - Python API instructions for M1 build</p></li>
+<li><p>3290 - Python help() needs to be added to readTheDocs</p></li>
+<li><p>3293 - Deleting a Python variable plotted in a renderer causes Vapor to crash</p></li>
+<li><p>3277 - Mismatched default origins between the Wireframe and TwoDData renderers</p></li>
+<li><p>3268 - M1 build crashes with isosurfaces</p></li>
+<li><p>3253 - Particle Length Scale changes direction rather than length</p></li>
+<li><p>3162 - Height mapped variables on 2D grids</p></li>
+<li><p>3148 - Contributor’s Guide documentation for building and installing Python API</p></li>
+<li><p>3060 - Closing Visualizer with multiple datasets breaks navigation controls</p></li>
+<li><p>3359 - anaconda.org installer currently broken</p></li>
 </ul>
-<p><strong>Bug fixes</strong></p>
-<ul class="simple">
-<li><p>3280 - VAPOR 3.7 crashes on Ubuntu 20.04 LTS</p></li>
-<li><p>3257 - VAPOR crashes when run through Rosetta (x86 emulation) on arm64 based M1 Macbook. Missing library?</p></li>
-<li><p>3250 - Particles jump with reduced Y extents</p></li>
-<li><p>3246 - Particle renderer does not work without selecting velocity variables</p></li>
-<li><p>3244 - Particles disappear when “Enable 3D Geometry” Disabled</p></li>
-<li><p>3243 - Crash in UnstructuredGrid3D</p></li>
-<li><p>3094 - Mess up smoke test headers won’t break build</p></li>
-</ul>
-<p>As always, please keep <a class="reference external" href="https://vapor.discourse.group/">engaging us on our forum</a>!</p>
-<p>Thank you!</p>
-<p>-The Vapor Team</p>
 </section>
 
 
