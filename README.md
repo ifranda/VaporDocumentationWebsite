@@ -3,21 +3,11 @@ This repository holds the html files that are used to host [Vapor's documentatio
 
 We use the Sphinx documentation generator to produce the html for the website.
 
-To reproduce this documentation locally, we recommend setting up a conda environment with the five dependencies listed below.  Once installed, the .rst files located in the docs/ directory can be edited to produce new html.
+To reproduce this documentation locally, we recommend setting up a conda environment with the environment.yml file included in this repo.  Once installed, the .rst files located in the docs/ directory can be edited to produce new html.
 
-    $ conda env export --from-history
-    name: VaporDocumentationWebsite
-    channels:
-      - conda-forge
-      - ncar-vapor
-      - defaults
-    dependencies:
-      - sphinx=5.3.0
-      - sphinx-rtd-theme
-      - sphinx-gallery
-      - sphinx-book-theme
-      - python=3.9
-      - vapor
+    $ git clone https://github.com/NCAR/VaporDocumentationWebsite.git
+    $ cd VaporDocumentationWebsite
+    $ conda env create -f environment.yml
 
 Once this conda environtment has been configured, the html can be generated with the following steps.
 
