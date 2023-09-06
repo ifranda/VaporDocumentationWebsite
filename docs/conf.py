@@ -32,7 +32,7 @@ author = ''
 # The short X.Y version
 version = ''
 # The full version, including alpha/beta/rc tags
-release = '3.8.1'
+release = '3.9.0'
 
 #breathe_projects = { "myproject": "/Users/pearse/vapor2/targets/common/doc/library/xml" }
 #breathe_default_project = "myproject"

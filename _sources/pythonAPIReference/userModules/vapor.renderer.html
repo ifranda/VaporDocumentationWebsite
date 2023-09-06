@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>vapor.renderer module &#8212;   3.8.1 documentation</title>
+    <title>vapor.renderer module &#8212;   3.9.0 documentation</title>
   
   
   
@@ -238,7 +238,14 @@
 </li>
 <li class="toctree-l1"><a class="reference external" href="https://www.youtube.com/channel/UCpf-d1GDO1sotzjJ2t_QkDw">YouTube Channel</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://vapor.discourse.group">Get Help on Our Forum</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../../contributingToVapor.html">Contributing to Vapor</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../contributingToVapor.html">Contributing to Vapor</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../contributingToVapor/whereToStart.html">Where to start?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../contributingToVapor/bugReportsAndFeatureRequests.html">Bug Reports and Feature Requests</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../contributingToVapor/codeContributions.html">Code Contributions</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../contributingToVapor/contributingToVaporsDocumentation.html">Contributing to Vapor’s Documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../contributingToVapor/contributingToVaporsGallery.html">Contributing to Vapor’s Gallery</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../citationAndLicense.html">Citation and License</a></li>
@@ -721,7 +728,7 @@ document.write(`
 <dl class="py class">
 <dt class="sig sig-object py" id="vapor.renderer.BarbRenderer">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vapor.renderer.</span></span><span class="sig-name descname"><span class="pre">BarbRenderer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">renderParams</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">RenderParams</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vapor.renderer.BarbRenderer" title="Permalink to this definition">#</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#vapor.renderer.Renderer" title="vapor.renderer.Renderer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Renderer</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="../../../pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.Renderer" title="vapor.renderer.Renderer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Renderer</span></code></a></p>
 <p>Wraps VAPoR::BarbParams
 Class that supports drawing Barbs based on 2D or 3D vector field.</p>
 <dl class="py attribute">
@@ -849,13 +856,13 @@ Class that supports drawing Barbs based on 2D or 3D vector field.</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="vapor.renderer.Class">
 <span class="sig-prename descclassname"><span class="pre">vapor.renderer.</span></span><span class="sig-name descname"><span class="pre">Class</span></span><a class="headerlink" href="#vapor.renderer.Class" title="Permalink to this definition">#</a></dt>
-<dd><p>alias of <a class="reference internal" href="#vapor.renderer.ImageRenderer" title="vapor.renderer.ImageRenderer"><code class="xref py py-class docutils literal notranslate"><span class="pre">ImageRenderer</span></code></a></p>
+<dd><p>alias of <a class="reference internal" href="../../../pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.ContourRenderer" title="vapor.renderer.ContourRenderer"><code class="xref py py-class docutils literal notranslate"><span class="pre">ContourRenderer</span></code></a></p>
 </dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="vapor.renderer.ContourRenderer">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vapor.renderer.</span></span><span class="sig-name descname"><span class="pre">ContourRenderer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">renderParams</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">RenderParams</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vapor.renderer.ContourRenderer" title="Permalink to this definition">#</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#vapor.renderer.Renderer" title="vapor.renderer.Renderer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Renderer</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="../../../pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.Renderer" title="vapor.renderer.Renderer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Renderer</span></code></a></p>
 <p>Wraps VAPoR::ContourParams
 Class that supports drawing Contours based on 2D or 3D vector field.</p>
 <dl class="py method">
@@ -878,7 +885,7 @@ Class that supports drawing Contours based on 2D or 3D vector field.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="vapor.renderer.FlowRenderer">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vapor.renderer.</span></span><span class="sig-name descname"><span class="pre">FlowRenderer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">renderParams</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">RenderParams</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vapor.renderer.FlowRenderer" title="Permalink to this definition">#</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#vapor.renderer.Renderer" title="vapor.renderer.Renderer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Renderer</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="../../../pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.Renderer" title="vapor.renderer.Renderer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Renderer</span></code></a></p>
 <p>Wraps VAPoR::FlowParams</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="vapor.renderer.FlowRenderer.FlowDir">
@@ -986,7 +993,7 @@ LIST</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="vapor.renderer.FlowRenderer.GetIntegrationRegion">
-<span class="sig-name descname"><span class="pre">GetIntegrationRegion</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#vapor.renderer.BoundingBox" title="vapor.renderer.BoundingBox"><span class="pre">BoundingBox</span></a></span></span><a class="headerlink" href="#vapor.renderer.FlowRenderer.GetIntegrationRegion" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">GetIntegrationRegion</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../../../pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.BoundingBox" title="vapor.renderer.BoundingBox"><span class="pre">BoundingBox</span></a></span></span><a class="headerlink" href="#vapor.renderer.FlowRenderer.GetIntegrationRegion" title="Permalink to this definition">#</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -1064,7 +1071,7 @@ Negative bias will place seeds at locations where the bias value has low values.
 
 <dl class="py method">
 <dt class="sig sig-object py" id="vapor.renderer.FlowRenderer.GetRakeRegion">
-<span class="sig-name descname"><span class="pre">GetRakeRegion</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#vapor.renderer.BoundingBox" title="vapor.renderer.BoundingBox"><span class="pre">BoundingBox</span></a></span></span><a class="headerlink" href="#vapor.renderer.FlowRenderer.GetRakeRegion" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">GetRakeRegion</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../../../pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.BoundingBox" title="vapor.renderer.BoundingBox"><span class="pre">BoundingBox</span></a></span></span><a class="headerlink" href="#vapor.renderer.FlowRenderer.GetRakeRegion" title="Permalink to this definition">#</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -1530,7 +1537,7 @@ If there happens to be a mismatch between the units of your data’s domain and 
 <dl class="py class">
 <dt class="sig sig-object py" id="vapor.renderer.ImageRenderer">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vapor.renderer.</span></span><span class="sig-name descname"><span class="pre">ImageRenderer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">renderParams</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">RenderParams</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vapor.renderer.ImageRenderer" title="Permalink to this definition">#</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#vapor.renderer.Renderer" title="vapor.renderer.Renderer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Renderer</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="../../../pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.Renderer" title="vapor.renderer.Renderer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Renderer</span></code></a></p>
 <p>Wraps VAPoR::ImageParams</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="vapor.renderer.ImageRenderer.GetIgnoreTransparency">
@@ -1618,7 +1625,7 @@ If there happens to be a mismatch between the units of your data’s domain and 
 <dl class="py class">
 <dt class="sig sig-object py" id="vapor.renderer.ModelRenderer">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vapor.renderer.</span></span><span class="sig-name descname"><span class="pre">ModelRenderer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">renderParams</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">RenderParams</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vapor.renderer.ModelRenderer" title="Permalink to this definition">#</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#vapor.renderer.Renderer" title="vapor.renderer.Renderer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Renderer</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="../../../pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.Renderer" title="vapor.renderer.Renderer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Renderer</span></code></a></p>
 <p>Wraps VAPoR::ModelParams</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="vapor.renderer.ModelRenderer.GetFile">
@@ -1658,7 +1665,7 @@ If there happens to be a mismatch between the units of your data’s domain and 
 <dl class="py class">
 <dt class="sig sig-object py" id="vapor.renderer.Renderer">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vapor.renderer.</span></span><span class="sig-name descname"><span class="pre">Renderer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">renderParams</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">RenderParams</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vapor.renderer.Renderer" title="Permalink to this definition">#</a></dt>
-<dd><p>Bases: <a class="reference internal" href="../devModules/vapor.params.html#vapor.params.ParamsWrapper" title="vapor.params.ParamsWrapper"><code class="xref py py-class docutils literal notranslate"><span class="pre">ParamsWrapper</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="../../../pythonAPIReference/devModules/vapor.params.html#vapor.params.ParamsWrapper" title="vapor.params.ParamsWrapper"><code class="xref py py-class docutils literal notranslate"><span class="pre">ParamsWrapper</span></code></a></p>
 <p>Wraps VAPoR::RenderParams
 A Params subclass for managing parameters used by Renderers.</p>
 <dl class="py attribute">
@@ -1686,7 +1693,7 @@ The default is a vector of length containing the empty string.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="vapor.renderer.Renderer.GetColorbarAnnotation">
-<span class="sig-name descname"><span class="pre">GetColorbarAnnotation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="vapor.annotations.html#vapor.annotations.ColorbarAnnotation" title="vapor.annotations.ColorbarAnnotation"><span class="pre">ColorbarAnnotation</span></a></span></span><a class="headerlink" href="#vapor.renderer.Renderer.GetColorbarAnnotation" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">GetColorbarAnnotation</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../../../pythonAPIReference/userModules/vapor.annotations.html#vapor.annotations.ColorbarAnnotation" title="vapor.annotations.ColorbarAnnotation"><span class="pre">ColorbarAnnotation</span></a></span></span><a class="headerlink" href="#vapor.renderer.Renderer.GetColorbarAnnotation" title="Permalink to this definition">#</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -1737,7 +1744,7 @@ The default is a vector of length containing the empty string.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="vapor.renderer.Renderer.GetPrimaryTransferFunction">
-<span class="sig-name descname"><span class="pre">GetPrimaryTransferFunction</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="vapor.transferfunction.html#vapor.transferfunction.TransferFunction" title="vapor.transferfunction.TransferFunction"><span class="pre">TransferFunction</span></a></span></span><a class="headerlink" href="#vapor.renderer.Renderer.GetPrimaryTransferFunction" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">GetPrimaryTransferFunction</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../../../pythonAPIReference/userModules/vapor.transferfunction.html#vapor.transferfunction.TransferFunction" title="vapor.transferfunction.TransferFunction"><span class="pre">TransferFunction</span></a></span></span><a class="headerlink" href="#vapor.renderer.Renderer.GetPrimaryTransferFunction" title="Permalink to this definition">#</a></dt>
 <dd><p>Returns the transfer function for the primary rendered variable.
 This is usually the variable that is being colormapped and would be
 represented by the colorbar.</p>
@@ -1756,12 +1763,12 @@ represented by the colorbar.</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="vapor.renderer.Renderer.GetRenderRegion">
-<span class="sig-name descname"><span class="pre">GetRenderRegion</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#vapor.renderer.BoundingBox" title="vapor.renderer.BoundingBox"><span class="pre">BoundingBox</span></a></span></span><a class="headerlink" href="#vapor.renderer.Renderer.GetRenderRegion" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">GetRenderRegion</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../../../pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.BoundingBox" title="vapor.renderer.BoundingBox"><span class="pre">BoundingBox</span></a></span></span><a class="headerlink" href="#vapor.renderer.Renderer.GetRenderRegion" title="Permalink to this definition">#</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="vapor.renderer.Renderer.GetTransferFunction">
-<span class="sig-name descname"><span class="pre">GetTransferFunction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">varname</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="vapor.transferfunction.html#vapor.transferfunction.TransferFunction" title="vapor.transferfunction.TransferFunction"><span class="pre">TransferFunction</span></a></span></span><a class="headerlink" href="#vapor.renderer.Renderer.GetTransferFunction" title="Permalink to this definition">#</a></dt>
+<span class="sig-name descname"><span class="pre">GetTransferFunction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">varname</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="../../../pythonAPIReference/userModules/vapor.transferfunction.html#vapor.transferfunction.TransferFunction" title="vapor.transferfunction.TransferFunction"><span class="pre">TransferFunction</span></a></span></span><a class="headerlink" href="#vapor.renderer.Renderer.GetTransferFunction" title="Permalink to this definition">#</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
@@ -1997,7 +2004,7 @@ Indicate if a single (constant) color is being used</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="vapor.renderer.SliceRenderer">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vapor.renderer.</span></span><span class="sig-name descname"><span class="pre">SliceRenderer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">renderParams</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">RenderParams</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vapor.renderer.SliceRenderer" title="Permalink to this definition">#</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#vapor.renderer.Renderer" title="vapor.renderer.Renderer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Renderer</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="../../../pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.Renderer" title="vapor.renderer.Renderer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Renderer</span></code></a></p>
 <p>Wraps VAPoR::SliceParams
 Class that supports drawing Barbs based on 2D or 3D vector field.</p>
 <dl class="py method">
@@ -2227,7 +2234,7 @@ This tag only applies when 3D data are sliced for contouring or pseudo-coloring 
 <dl class="py class">
 <dt class="sig sig-object py" id="vapor.renderer.TwoDDataRenderer">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vapor.renderer.</span></span><span class="sig-name descname"><span class="pre">TwoDDataRenderer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">renderParams</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">RenderParams</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vapor.renderer.TwoDDataRenderer" title="Permalink to this definition">#</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#vapor.renderer.Renderer" title="vapor.renderer.Renderer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Renderer</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="../../../pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.Renderer" title="vapor.renderer.Renderer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Renderer</span></code></a></p>
 <p>Wraps VAPoR::TwoDDataParams
 Class that supports drawing Barbs based on 2D or 3D vector field.</p>
 <dl class="py attribute">
@@ -2240,7 +2247,7 @@ Class that supports drawing Barbs based on 2D or 3D vector field.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="vapor.renderer.VolumeIsoRenderer">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vapor.renderer.</span></span><span class="sig-name descname"><span class="pre">VolumeIsoRenderer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">renderParams</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">RenderParams</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vapor.renderer.VolumeIsoRenderer" title="Permalink to this definition">#</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#vapor.renderer.VolumeRenderer" title="vapor.renderer.VolumeRenderer"><code class="xref py py-class docutils literal notranslate"><span class="pre">VolumeRenderer</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="../../../pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.VolumeRenderer" title="vapor.renderer.VolumeRenderer"><code class="xref py py-class docutils literal notranslate"><span class="pre">VolumeRenderer</span></code></a></p>
 <p>Wraps VAPoR::VolumeIsoParams</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="vapor.renderer.VolumeIsoRenderer.GetAlgorithmNames">
@@ -2268,7 +2275,7 @@ Class that supports drawing Barbs based on 2D or 3D vector field.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="vapor.renderer.VolumeRenderer">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vapor.renderer.</span></span><span class="sig-name descname"><span class="pre">VolumeRenderer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">renderParams</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">RenderParams</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vapor.renderer.VolumeRenderer" title="Permalink to this definition">#</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#vapor.renderer.Renderer" title="vapor.renderer.Renderer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Renderer</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="../../../pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.Renderer" title="vapor.renderer.Renderer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Renderer</span></code></a></p>
 <p>Wraps VAPoR::VolumeParams</p>
 <dl class="py attribute">
 <dt class="sig sig-object py" id="vapor.renderer.VolumeRenderer.GetAlgorithm">
@@ -2463,7 +2470,7 @@ Class that supports drawing Barbs based on 2D or 3D vector field.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="vapor.renderer.WireFrameRenderer">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vapor.renderer.</span></span><span class="sig-name descname"><span class="pre">WireFrameRenderer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">renderParams</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">RenderParams</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#vapor.renderer.WireFrameRenderer" title="Permalink to this definition">#</a></dt>
-<dd><p>Bases: <a class="reference internal" href="#vapor.renderer.Renderer" title="vapor.renderer.Renderer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Renderer</span></code></a></p>
+<dd><p>Bases: <a class="reference internal" href="../../../pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.Renderer" title="vapor.renderer.Renderer"><code class="xref py py-class docutils literal notranslate"><span class="pre">Renderer</span></code></a></p>
 <p>Wraps VAPoR::WireFrameParams
 Class that supports drawing Barbs based on 2D or 3D vector field.</p>
 <dl class="py attribute">

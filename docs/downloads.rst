@@ -4,7 +4,7 @@
 Downloads
 =========
 
-.. include:: announcements/3.8.1.rst
+.. include:: announcements/3.9.0.rst
 
 .. toctree::
     :maxdepth: 1

@@ -8,7 +8,7 @@ VAPOR is the Visualization and Analysis Platform for Ocean, Atmosphere, and Sola
 Current Release
 ===============
 
-.. include:: announcements/3.8.1.rst
+.. include:: announcements/3.9.0.rst
 
 .. toctree::
    :maxdepth: 2
