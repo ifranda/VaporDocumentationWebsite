@@ -13,3 +13,4 @@ Downloads
     downloads/installationInstructions.rst
     downloads/sampleData.rst
     downloads/thirdPartyLibraries.rst
+    downloads/vapor2.rst

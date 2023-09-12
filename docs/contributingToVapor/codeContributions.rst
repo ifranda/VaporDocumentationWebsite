@@ -99,7 +99,7 @@ This is an alternative to downloading our pre-built libraries that allows you to
 
 If you wish to go down this route, you may follow the build instructions for `Windows <https://drive.google.com/a/ucar.edu/file/d/1nPZyNtH516D00Te2AwttRrPDTi0bDIbl/view?usp=sharing>`_ and `UNIX <https://docs.google.com/document/d/1XNBmoUvxGn9I0fy9xvB1m5PQyOI32TtdyMbwfOve0QQ/edit?usp=sharing>`_.
 
-The source code for these libraries may be downloaded `here <https://drive.google.com/open?id=1sWIV-Y66aFuDkC2oDnceIIUJDDH4puKI>`_.
+The source code for these libraries may be downloaded `here <https://drive.google.com/open?id=1FG8ngmz9Tk3HKZgGejqwtbkBAVonm91z>`_.
 
 .. note:: The file <vapor-source>/site_files/site.NCAR may be used to specifiy the location of the libraries.  To do this, build your version of the libraries in /usr/local/VAPOR-Deps/current, or change the THIRD_PARTY_LIB_DIR path in site.NCAR.
 
