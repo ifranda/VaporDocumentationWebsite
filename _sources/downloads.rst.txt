@@ -4,7 +4,7 @@
 Downloads
 =========
 
-.. include:: announcements/3.8.1.rst
+.. include:: announcements/3.9.0.rst
 
 .. toctree::
     :maxdepth: 1
@@ -13,3 +13,4 @@ Downloads
     downloads/installationInstructions.rst
     downloads/sampleData.rst
     downloads/thirdPartyLibraries.rst
+    downloads/vapor2.rst

@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Current Release &#8212;   3.9.0 documentation</title>
+    <title>Current Release &#8212;   3.9.1 documentation</title>
   
   
   
@@ -470,47 +470,29 @@ document.write(`
 <p>VAPOR is the Visualization and Analysis Platform for Ocean, Atmosphere, and Solar Researchers. A free 3D visualization environment for geophysical scientists.</p>
 <section id="current-release">
 <h1>Current Release<a class="headerlink" href="#current-release" title="Permalink to this heading">#</a></h1>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/antqCbgytsA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><div class="line-block">
-<div class="line"><br /></div>
-</div>
-<p><a class="reference external" href="https://forms.gle/xLGwLgYSiABbHe8t8">Download here</a></p>
-<p>September 6, 2023</p>
-<p>Vapor 3.9.0 is now live and includes the enhancements and fixed issues below.  Several significant enhancements have been added including a new and improved UI for Vapor’s renderer table which better shows metadata, support for moving domains, and updated third party libraries.  <a href="#id2"><span class="problematic" id="id3">`PythonAPI documentation and examples have been added&lt;https://ncar.github.io/VaporDocumentationWebsite/pythonAPIReference/examples.html&gt;`__</span></a>, and changes to Vapor’s session file format now make it easier to share sessions with colleagues.  Thank you to everyone who has suggested new features and reported bugs in the past months.  Stay tuned for more updates as we continue to increase the frequency of our release cycle.</p>
-<p><strong>New Enhancements</strong></p>
+<p id="id1"><a class="reference external" href="https://forms.gle/xLGwLgYSiABbHe8t8">Download here</a></p>
+<p>December 21, 2023</p>
+<p>Vapor has released a minor version, 3.9.1!  <a href="#id2"><span class="problematic" id="id3">`Download here&lt;https://docs.google.com/forms/d/e/1FAIpQLSdej3yFMIIqtgW0JIpmzntzfTfmgCujnWmzocmi40WZiRO9kA/viewform&gt;`__</span></a></p>
+<p>** What’s Changed **</p>
 <ul class="simple">
-<li><p>3399 - Relative, not absolute paths in VAPOR session files</p></li>
-<li><p>3394 - Python API support ZFP compressed data</p></li>
-<li><p>3392 - Colorbar font and background color controls</p></li>
-<li><p>3344 - Refactor renderer list GUI</p></li>
-<li><p>3307 - Third party library updates</p></li>
-<li><p>3258 - Add Lighting panel to Flow rendering Appearance option</p></li>
-<li><p>433 - Support for moving domains</p></li>
+<li><p>Fix #3429: Jupyter kernel dies when it can’t find data by &#64;StasJ in <a class="github reference external" href="https://github.com/NCAR/VAPOR/pull/3435">NCAR/VAPOR#3435</a></p></li>
+<li><p>Fix #3440: Moving domain bug by &#64;StasJ in <a class="github reference external" href="https://github.com/NCAR/VAPOR/pull/3445">NCAR/VAPOR#3445</a></p></li>
+<li><p>Python API Flow output incomplete #3448 by &#64;StasJ in <a class="github reference external" href="https://github.com/NCAR/VAPOR/pull/3450">NCAR/VAPOR#3450</a></p></li>
+<li><p>Fix Casper CAM/Gaussian dataset viz empty by &#64;StasJ in <a class="github reference external" href="https://github.com/NCAR/VAPOR/pull/3469">NCAR/VAPOR#3469</a></p></li>
+<li><p>Clean/fix remaining render regression test issues by &#64;StasJ in <a class="github reference external" href="https://github.com/NCAR/VAPOR/pull/3479">NCAR/VAPOR#3479</a></p></li>
+<li><p>Issue3465 - Adds rules to build SUSE installer and SUSE 3rd party libraries by &#64;sgpearse in <a class="github reference external" href="https://github.com/NCAR/VAPOR/pull/3468">NCAR/VAPOR#3468</a></p></li>
+<li><p>Fix #3328 Box manipulators broken on WRF data by &#64;StasJ in <a class="github reference external" href="https://github.com/NCAR/VAPOR/pull/3476">NCAR/VAPOR#3476</a></p></li>
+<li><p>Fix Moving domains: Domain does not move with only Image Renderer active #3459 by &#64;StasJ in <a class="github reference external" href="https://github.com/NCAR/VAPOR/pull/3478">NCAR/VAPOR#3478</a></p></li>
+<li><p>Add cross compilation rules for macos arm64/x86 and optimize circleci/config.yml by &#64;sgpearse in <a class="github reference external" href="https://github.com/NCAR/VAPOR/pull/3484">NCAR/VAPOR#3484</a></p></li>
+<li><p>Fix issue3403 - reinstate smoke tests on SUSE by &#64;sgpearse in <a class="github reference external" href="https://github.com/NCAR/VAPOR/pull/3491">NCAR/VAPOR#3491</a></p></li>
+<li><p>Re-enable OSPRay clipping volumes by &#64;StasJ in <a class="github reference external" href="https://github.com/NCAR/VAPOR/pull/3499">NCAR/VAPOR#3499</a></p></li>
+<li><p>Fix Particle Lighting seems weird #3214 by &#64;StasJ in <a class="github reference external" href="https://github.com/NCAR/VAPOR/pull/3490">NCAR/VAPOR#3490</a></p></li>
+<li><p>Fix Provide the user an option to specify absolute/relative paths for datasets #3420 by &#64;StasJ in <a class="github reference external" href="https://github.com/NCAR/VAPOR/pull/3493">NCAR/VAPOR#3493</a></p></li>
+<li><p>Provide an advanced option in flow advection to use a fixed, user provided step size.  by &#64;shaomeng in <a class="github reference external" href="https://github.com/NCAR/VAPOR/pull/3505">NCAR/VAPOR#3505</a></p></li>
+<li><p>fix ubuntu20 build by &#64;sgpearse in <a class="github reference external" href="https://github.com/NCAR/VAPOR/pull/3512">NCAR/VAPOR#3512</a></p></li>
 </ul>
-<p><strong>Fixed Issues</strong></p>
-<ul class="simple">
-<li><p>3439 - Broken CentOS installer</p></li>
-<li><p>3432 - Windows build is currently broken</p></li>
-<li><p>3431 - MacOS and Ubuntu installers broken</p></li>
-<li><p>3426 - Installer builds broken</p></li>
-<li><p>3424 - Zenodo authors are incorrect</p></li>
-<li><p>3421 - Python Engine not issuing error reports</p></li>
-<li><p>3408 - Changing projection string with active renderers crashes vapor</p></li>
-<li><p>3407 - OpenGL log is displayed as an error in Jupyter</p></li>
-<li><p>3397 - Vapor’s online documentation page for vapor.session is empty</p></li>
-<li><p>3393 - SetHDF5PluginPath clobbers user environment</p></li>
-<li><p>3390 - Python animation video writer does not honor framerate parameter</p></li>
-<li><p>3389 - Vapor does not handle session files with relative dataset paths</p></li>
-<li><p>3372 - Pathline render bug</p></li>
-<li><p>3366 - Verify documentation links</p></li>
-<li><p>3368 - Python documentation missing</p></li>
-<li><p>3365 - Visualizer default view has partial domain</p></li>
-<li><p>3361 - Flow streamlines give incorrect time information when written to file</p></li>
-<li><p>3350 - Docstring missing from vapor modules</p></li>
-<li><p>3334 - 3D grids in XArray are not supported</p></li>
-<li><p>3333 - XArray axes are swapped compared to Vapor convention</p></li>
-<li><p>3123 - VAPOR Python examples in Jupyter Notebook gallery form</p></li>
-<li><p>2973 - Python scripts saved in session files only usable with data sets they were created with</p></li>
-</ul>
+<p><strong>Full Changelog</strong>: <a class="reference external" href="https://github.com/NCAR/VAPOR/compare/v3.9.0...v3.9.1">https://github.com/NCAR/VAPOR/compare/v3.9.0…v3.9.1</a></p>
+<p>Vapor 3.9.0 is now live and includes the enhancements and fixed issues below.  Several significant enhancements have been added including a new and improved UI for Vapor’s renderer table which better shows metadata, support for moving domains, and updated third party libraries.  <a href="#id2"><span class="problematic" id="id4">`PythonAPI documentation and examples have been added&lt;https://ncar.github.io/VaporDocumentationWebsite/pythonAPIReference/examples.html&gt;`__</span></a>, and changes to Vapor’s session file format now make it easier to share sessions with colleagues.  Thank you to everyone who has suggested new features and reported bugs in the past months.  Stay tuned for more updates as we continue to increase the frequency of our release cycle.</p>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="downloads.html">Downloads</a><ul>
