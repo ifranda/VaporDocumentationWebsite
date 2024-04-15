@@ -1,0 +1,29 @@
+.. _3.9.2:
+
+`Download here <https://forms.gle/xLGwLgYSiABbHe8t8>`__
+
+April 11, 2024
+
+Vapor has released a minor version, 3.9.2!
+
+** What's Changed **
+
+* Issue3520 by @sgpearse in https://github.com/NCAR/VAPOR/pull/3521
+* change default interpolation order by @shaomeng in https://github.com/NCAR/VAPOR/pull/3523
+* Fix renderer list right click menu for particles by @StasJ in https://github.com/NCAR/VAPOR/pull/3528
+* Fix moving particle domain support and single particle crash by @StasJ in https://github.com/NCAR/VAPOR/pull/3529
+* Flow cleanup, Google Test by @shaomeng in https://github.com/NCAR/VAPOR/pull/3539
+* Improve particle renderer performance 12,500x by @StasJ in https://github.com/NCAR/VAPOR/pull/3541
+* Fix variable selector empty option and clean python api Conda build linker warnings by @StasJ in https://github.com/NCAR/VAPOR/pull/3557
+* fix a mutex use in ptr_cache by @shaomeng in https://github.com/NCAR/VAPOR/pull/3555
+* Universal Linux Installer by @sgpearse in https://github.com/NCAR/VAPOR/pull/3554
+* Fix typos/documentation by @StasJ in https://github.com/NCAR/VAPOR/pull/3553
+* fix broken windows build by @sgpearse in https://github.com/NCAR/VAPOR/pull/3562
+* Particle dynamic size by @StasJ in https://github.com/NCAR/VAPOR/pull/3550
+* Migrate smoke tests to Ubuntu20 by @sgpearse in https://github.com/NCAR/VAPOR/pull/3565
+* Fix conda x86 and linux builds and fix 3.9 example util by @StasJ in https://github.com/NCAR/VAPOR/pull/3568
+* Fix #3527 memory error by @StasJ in https://github.com/NCAR/VAPOR/pull/3572
+* Fix UnstructuredGrid2D broken by @StasJ in https://github.com/NCAR/VAPOR/pull/3571
+
+
+**Full Changelog**: https://github.com/NCAR/VAPOR/compare/v3.9.1...v3.9.2

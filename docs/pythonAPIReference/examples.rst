@@ -8,6 +8,7 @@ ________
    examples/numpy_example.rst
    examples/transfer_function_example.rst
    examples/flow_example.rst
+   examples/rotate_video.rst
    examples/camera_example.rst
    examples/annotation_example.rst
    examples/animation_example.rst
