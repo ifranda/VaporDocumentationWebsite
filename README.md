@@ -7,13 +7,13 @@ To reproduce this documentation locally, we recommend setting up a conda environ
 
     $ git clone https://github.com/NCAR/VaporDocumentationWebsite.git
     $ cd VaporDocumentationWebsite
+    $ conda config --add channels conda-forge
     $ conda env create -f environment.yml
 
 Once this conda environtment has been configured, the html can be generated with the following steps.
 
-1) git clone https://github.com/NCAR/VaporDocumentationWebsite.git 
-2) cd VaporDocumentationWebsite/docs
-3) make html
-4) cp -r html/* ../
+1) cd VaporDocumentationWebsite/docs
+2) make html
+3) cp -r html/* ../
 
 Note that step 4 moves the html files from VaporDocumentationWebsite/docs/html to the root directory, VaporDocumentationWebsite.  Without this step, github pages will not host the the html files.
