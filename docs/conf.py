@@ -8,7 +8,7 @@
 
 import os
 import sys
-import sphinx_rtd_theme
+#import sphinx_rtd_theme
 import subprocess
 import pkgutil
 
