@@ -43,10 +43,13 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx_gallery.gen_gallery',
+    'sphinxcontrib.googleanalytics',
     #'jupyter_sphinx.execute'
     #'breathe'
     #'wheel'
 ]
+
+googleanalytics_id = "G-VY29EEZ393"
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
