@@ -10,6 +10,7 @@ To reproduce this documentation locally, we recommend setting up a conda environ
     $ conda config --add channels conda-forge
     $ conda env create -f environment.yml
     $ conda activate VaporDocumentationWebsite
+    $ pip install sphinxcontrib-googleanalytics
 
 Once this conda environtment has been configured, the html can be generated with the following steps.
 
