@@ -35,6 +35,7 @@ A demonstration can be viewed below, and the sample data used in these examples 
 
     <div class="sphx-glr-thumbnails">
 
+.. thumbnail-parent-div-open
 
 .. raw:: html
 
@@ -69,6 +70,8 @@ A demonstration can be viewed below, and the sample data used in these examples 
       <div class="sphx-glr-thumbnail-title">rectilinearGridExample.py</div>
     </div>
 
+
+.. thumbnail-parent-div-close
 
 .. raw:: html
 
