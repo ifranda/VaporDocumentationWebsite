@@ -40,6 +40,27 @@ If you want to make changes to the python class reference, there are a couple of
 
 1. Fork both VAPOR's `main repository <https://github.com/NCAR/VAPOR>`_ and Vapor's `documentation repository <https://github.com/NCAR/VaporDocumentationWebsite>`_. You'll need to submit changes to both of these repositories. Clone each of these forks to your local machine.
 2. Within the VAPOR clone, make changes to the comments in the appropriate .py and .h files.
+
+    Editing the GetRenderer function in /VAPOR/apps/pythonapi/vapor/session.py using Python syntax:
+
+    .. code-block:: python
+
+        ...
+        def GetRenderer():
+            """
+            Add new comment between triple quotes directly after function definition
+            """
+        ...
+
+    Editing the SetAxisAnnotationEnabled function in /VAPOR/include/vapor/AxisAnnotations.h using C++ and Doxygen syntax:
+
+    .. code-block:: cpp
+
+        ...
+        //! Add new comment directly before function definition
+        bool SetAxisAnnotationEnabled(bool val);
+        ...
+
 3. Create the VaporDocumentationWebsite conda environment:
 
 .. code-block:: console

@@ -236,22 +236,10 @@
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../pythonAPIReference.html">Python API Reference</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../pythonAPIReference/downloadAndInstallation.html">Download and Installation</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../pythonAPIReference/examples.html">Examples</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l3"><a class="reference internal" href="../pythonAPIReference/examples/visualizer_widget_example.html">visualizer_widget_example.rst</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pythonAPIReference/examples/xarray_example.html">xarray_example.rst</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pythonAPIReference/examples/numpy_example.html">numpy_example.rst</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pythonAPIReference/examples/transfer_function_example.html">transfer_function_example.rst</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pythonAPIReference/examples/flow_example.html">flow_example.rst</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pythonAPIReference/examples/rotate_video.html">rotate_video.rst</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pythonAPIReference/examples/camera_example.html">camera_example.rst</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pythonAPIReference/examples/annotation_example.html">annotation_example.rst</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pythonAPIReference/examples/animation_example.html">animation_example.rst</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pythonAPIReference/examples/dataset_example.html">dataset_example.rst</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../pythonAPIReference/examples/workflow_example.html">workflow_example.rst</a></li>
-</ul>
-</details></li>
+<li class="toctree-l2"><a class="reference internal" href="../pythonAPIReference/examples.html">Examples</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../pythonAPIReference/classReference.html">Class Reference</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../pythonAPIReference/userModules/vapor.html">User Modules</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pythonAPIReference/userModules/vapor.utils.html">vapor.utils package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../pythonAPIReference/userModules/vapor.animation.html">vapor.animation module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../pythonAPIReference/userModules/vapor.annotations.html">vapor.annotations module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../pythonAPIReference/userModules/vapor.camera.html">vapor.camera module</a></li>
@@ -260,10 +248,10 @@
 <li class="toctree-l4"><a class="reference internal" href="../pythonAPIReference/userModules/vapor.session.html">vapor.session module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../pythonAPIReference/userModules/vapor.transferfunction.html">vapor.transferfunction module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../pythonAPIReference/userModules/vapor.transform.html">vapor.transform module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../pythonAPIReference/userModules/vapor.utils.html">vapor.utils module</a></li>
 </ul>
 </details></li>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../pythonAPIReference/devModules/vapor.html">Developer Modules</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../pythonAPIReference/devModules/vapor.utils.html">vapor.utils package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../pythonAPIReference/devModules/vapor.cmake.html">vapor.cmake module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../pythonAPIReference/devModules/vapor.common.html">vapor.common module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../pythonAPIReference/devModules/vapor.config.html">vapor.config module</a></li>
@@ -271,7 +259,6 @@
 <li class="toctree-l4"><a class="reference internal" href="../pythonAPIReference/devModules/vapor.link.html">vapor.link module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../pythonAPIReference/devModules/vapor.params.html">vapor.params module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../pythonAPIReference/devModules/vapor.smartwrapper.html">vapor.smartwrapper module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../pythonAPIReference/devModules/vapor.utils.html">vapor.utils module</a></li>
 </ul>
 </details></li>
 </ul>
@@ -549,9 +536,28 @@ document.write(`
 <section id="contributing-to-python-class-reference">
 <h1>Contributing to Python Class Reference<a class="headerlink" href="#contributing-to-python-class-reference" title="Permalink to this heading">#</a></h1>
 <p>If you want to make changes to the python class reference, there are a couple of additional steps. Sphinx builds the class reference from the version of Vapor Python installed in your current conda environment using comments within the code. To make changes to the function descriptions, you’ll need to edit the comments for the function in the code, which will either be in a Python file or a C++ header file. Here is a step by step guide:</p>
-<ol class="arabic simple">
+<ol class="arabic">
 <li><p>Fork both VAPOR’s <a class="reference external" href="https://github.com/NCAR/VAPOR">main repository</a> and Vapor’s <a class="reference external" href="https://github.com/NCAR/VaporDocumentationWebsite">documentation repository</a>. You’ll need to submit changes to both of these repositories. Clone each of these forks to your local machine.</p></li>
-<li><p>Within the VAPOR clone, make changes to the comments in the appropriate .py and .h files.</p></li>
+<li><p>Within the VAPOR clone, make changes to the comments in the appropriate .py and .h files.</p>
+<blockquote>
+<div><p>Editing the GetRenderer function in /VAPOR/apps/pythonapi/vapor/session.py using Python syntax:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">...</span>
+<span class="k">def</span> <span class="nf">GetRenderer</span><span class="p">():</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Add new comment between triple quotes directly after function definition</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+<span class="o">...</span>
+</pre></div>
+</div>
+<p>Editing the SetAxisAnnotationEnabled function in /VAPOR/include/vapor/AxisAnnotations.h using C++ and Doxygen syntax:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="p">...</span>
+<span class="c1">//! Add new comment directly before function definition</span>
+<span class="kt">bool</span><span class="w"> </span><span class="n">SetAxisAnnotationEnabled</span><span class="p">(</span><span class="kt">bool</span><span class="w"> </span><span class="n">val</span><span class="p">);</span>
+<span class="p">...</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
 <li><p>Create the VaporDocumentationWebsite conda environment:</p></li>
 </ol>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">cd VaporDocumentationWebsite</span>
