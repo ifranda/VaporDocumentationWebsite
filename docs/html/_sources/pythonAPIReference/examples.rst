@@ -1,16 +1,5 @@
 Examples
 ________
 
-.. toctree::
 
-   examples/visualizer_widget_example.rst
-   examples/xarray_example.rst
-   examples/numpy_example.rst
-   examples/transfer_function_example.rst
-   examples/flow_example.rst
-   examples/rotate_video.rst
-   examples/camera_example.rst
-   examples/annotation_example.rst
-   examples/animation_example.rst
-   examples/dataset_example.rst
-   examples/workflow_example.rst
+Example notebooks for Vapor's Python API can be found in the `VAPOR Python Cookbook <https://projectpythia.org/vapor-python-cookbook/README.html>`_.
