@@ -10,5 +10,6 @@ Python API Reference
    :maxdepth: 1
 
    pythonAPIReference/downloadAndInstallation.rst
+   pythonAPIReference/wslInstructions.rst
    pythonAPIReference/examples.rst
    pythonAPIReference/classReference.rst
