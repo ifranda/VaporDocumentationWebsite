@@ -16,6 +16,8 @@ The following datasets are provided for user experimentation.
 +-----------------------------+-----------+----------------+-------------------+-----------+
 | DUKU_                       | WRF-ARW   | WRF-ARW        | 181 x 166 x 35    | 734 MB    |
 +-----------------------------+-----------+----------------+-------------------+-----------+
+| Katrina_                    | WRF-ARW   | WRF-ARW        | 316 x 309 x 34    | 7.2 MB    |
++-----------------------------+-----------+----------------+-------------------+-----------+
 | Marshall_                   | WRF-Fire  | WRF-ARW        | Multi grid        | 827 MB    |
 +-----------------------------+-----------+----------------+-------------------+-----------+
 | UGRIDsmall_                 | UGRID     | UGRID          | Unstructured      | 5.1 MB    |
@@ -27,22 +29,24 @@ The following datasets are provided for user experimentation.
 | Particles_                  | Synthetic | DCP            | N/A               | 119 KB    |
 +-----------------------------+-----------+----------------+-------------------+-----------+
 
-.. _DUKU: https://drive.google.com/file/d/1lZdxM5TzcqhjwlZ2K5WRK0T4bumbxb1R/view?usp=sharing
+.. _DUKU: https://data.rda.ucar.edu/ds897.7/DUKU.zip
 
-.. _Kauffman: https://drive.google.com/file/d/1918eZ3UJzaGH8NbKjYjCNLpl8V3uyGww/view?usp=sharing
+.. _Kauffman: https://data.rda.ucar.edu/ds897.7/kauffmanSample.zip
 
-.. _UGRIDsmall: https://drive.google.com/file/d/1kQASS78W9KyMLYvJv40Pvm60j0gCvq3s/view?usp=sharing
+.. _UGRIDsmall: https://data.rda.ucar.edu/ds897.7/UGRIDsmall.zip
 
-.. _Tornado: https://drive.google.com/file/d/18T7Ss01YjufK3_ScdUlxz9ljAJ8nL_-b/view?usp=sharing
+.. _Tornado: https://data.rda.ucar.edu/ds897.7/Tornado.zip
 
-.. _OvershootingTop: https://drive.google.com/file/d/1JB1AdIItI2-WtTCovvYdKCqTFLmFAhV0/view?usp=sharing
+.. _OvershootingTop: https://data.rda.ucar.edu/ds897.7/overshootingTop.zip
 
-.. _MultiTimeMultiVar: https://drive.google.com/file/d/1cp-oNVaLej6jzcDo2sOYec56svfX0sGc/view?usp=sharing
+.. _MultiTimeMultiVar: https://data.rda.ucar.edu/ds897.7/Brick.zip
 
-.. _wmag: https://drive.google.com/file/d/1H6sfOd9uh6Lk3RbAbDkTzKt7NWt7AcoJ/view?usp=sharing
+.. _wmag: https://data.rda.ucar.edu/ds897.7/wmag.zip
 
-.. _Particles: https://drive.google.com/file/d/1DoC8EJEp9oCaBfTCJUj12vgR6-ykhK48/view?usp=sharing
+.. _Particles: https://data.rda.ucar.edu/ds897.7/Particles.zip
 
-.. _Marshall: https://drive.google.com/file/d/1QVq6L90BEC408MoROxTf7lTboaBG18Wh/view?usp=sharing
+.. _Marshall: https://data.rda.ucar.edu/ds897.7/MarshallWildfire.zip
+
+.. _Katrina: https://data.rda.ucar.edu/ds897.7/Katrina.zip
 
 .. note:: Users can download a 500 meter resolution image of NASA's `BigBlueMarble <https://drive.google.com/open?id=1qIwh8ZJj67d85ktkjpgOVBAE-oMRi3rD>`_ for use in Vapor's Image Renderer.
