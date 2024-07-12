@@ -484,35 +484,32 @@ document.write(`
                   
   <section id="windows-instructions">
 <h1>Windows Instructions<a class="headerlink" href="#windows-instructions" title="Permalink to this heading">#</a></h1>
-<p>To run Vapor-python on Windows distributions, we recommend installing the Windows Subsystem for Linux (<a class="reference external" href="https://docs.microsoft.com/en-us/windows/wsl/install">WSL</a>). This will allow you to run your workflows in a Linux-based environment on your Windows machine. To get started, follow these steps.</p>
+<p>To run VAPOR Python on Windows distributions, we recommend installing the Windows Subsystem for Linux (<a class="reference external" href="https://docs.microsoft.com/en-us/windows/wsl/install">WSL</a>). This will allow you to run your workflows in a Linux-based environment on your Windows machine. To get started, follow these steps:</p>
 <ol class="arabic">
-<li><p>Open PowerShell or Windows Command Prompt in administrator mode.</p></li>
+<li><p>Open PowerShell or Windows Command Prompt in administrator mode by right-clicking and selecting “Run as administrator”.</p></li>
 <li><p>Enter the following command to install WSL:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">wsl --install</span>
 </pre></div>
 </div>
 </li>
-<li><p>After the installation finishes, restart your machine for changes to take effect.</p></li>
+<li><p>After the installation finishes, restart your machine for these changes to take effect.</p></li>
 <li><p>Next, press the Windows key, search for “Ubuntu,” and run the Ubuntu app. Follow the setup instructions it provides.</p></li>
-<li><p>After setup, install Conda by running these two lines to download and install Conda.</p>
-<p>Tips:
-- Right-click will paste into the Ubuntu terminal.
-- Space bar lets you scroll through text faster than enter.</p>
+<li><p>After Ubuntu setup, install Conda by running the two commands below. (To paste into your Ubuntu environment, right click anywhere in the terminal)</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh</span>
-<span class="go">bash Miniconda3-latest-Linux-x86_64.sh -b</span>
+<span class="go">bash Miniconda3-latest-Linux-x86_64.sh</span>
 </pre></div>
 </div>
 </li>
-<li><p>Restart Ubuntu for changes to take effect.</p></li>
-<li><p>Install Vapor-python using Conda:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">conda create -n vapor_python python=3.9</span>
+<li><p>Restart Ubuntu for these changes to take effect.</p></li>
+<li><p>Install VAPOR Python using conda:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">conda create -n vapor_python</span>
 <span class="go">conda activate vapor_python</span>
 <span class="go">conda install -c conda-forge -c ncar vapor</span>
 </pre></div>
 </div>
 </li>
-<li><p>Open with a coding environment.</p>
-<p><strong>Jupyter Lab:</strong> With Jupyter Lab, run a command to let Jupyter see your new environment, launch Jupyter Lab, then copy and paste one of the links into your browser.</p>
+<li><p>After vapor installation is complete, you can open a coding environment of your choice:</p>
+<p><strong>Jupyter Lab:</strong> With Jupyter Lab, first run a command to let Jupyter see your new vapor environment. Then launch Jupyter Lab and copy and paste one of the provided links into your browser.</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">python -m ipykernel install --user --name vapor-python --display-name &quot;Vapor Python&quot;</span>
 <span class="go">jupyter lab</span>
 </pre></div>
