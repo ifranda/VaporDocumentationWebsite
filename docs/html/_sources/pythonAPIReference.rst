@@ -11,5 +11,5 @@ Python API Reference
 
    pythonAPIReference/downloadAndInstallation.rst
    pythonAPIReference/wslInstructions.rst
-   pythonAPIReference/examples.rst
    pythonAPIReference/classReference.rst
+   Examples <https://projectpythia.org/vapor-python-cookbook/README.html>
