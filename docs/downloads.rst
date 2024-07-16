@@ -11,6 +11,7 @@ Downloads
 
     announcements/current.rst
     downloads/installationInstructions.rst
+    downloads/vaporOnCasper.rst
     downloads/sampleData.rst
     downloads/thirdPartyLibraries.rst
     downloads/vapor2.rst

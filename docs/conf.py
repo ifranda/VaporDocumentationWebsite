@@ -44,6 +44,7 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx_gallery.gen_gallery',
     'sphinxcontrib.googleanalytics',
+    'sphinx_copybutton'
     #'jupyter_sphinx.execute'
     #'breathe'
     #'wheel'

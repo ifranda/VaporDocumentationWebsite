@@ -3,7 +3,7 @@
 Sample Data
 -----------
 
-The following datasets are provided for user experimentation.
+The following datasets are provided for user experimentation. They can also be found at NCAR's `Research Data Archives <https://rda.ucar.edu/datasets/ds897-7/>`_.
 
 +-----------------------------+-----------+----------------+-------------------+-----------+
 | Dataset                     | Model     | Loads as       | Grid resolution   | File size |
@@ -16,7 +16,7 @@ The following datasets are provided for user experimentation.
 +-----------------------------+-----------+----------------+-------------------+-----------+
 | DUKU_                       | WRF-ARW   | WRF-ARW        | 181 x 166 x 35    | 734 MB    |
 +-----------------------------+-----------+----------------+-------------------+-----------+
-| Katrina_                    | WRF-ARW   | WRF-ARW        | 316 x 309 x 34    | 7.2 MB    |
+| Katrina_                    | WRF-ARW   | WRF-ARW        | 316 x 309 x 34    | 171 MB    |
 +-----------------------------+-----------+----------------+-------------------+-----------+
 | Marshall_                   | WRF-Fire  | WRF-ARW        | Multi grid        | 827 MB    |
 +-----------------------------+-----------+----------------+-------------------+-----------+
