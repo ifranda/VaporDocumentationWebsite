@@ -11,6 +11,7 @@ To reproduce this documentation locally, we recommend setting up a conda environ
     $ conda env create -f environment.yml
     $ conda activate VaporDocumentationWebsite
     $ pip install sphinxcontrib-googleanalytics
+    $ pip install sphinx-copybutton
 
 Once this conda environment has been configured, the html can be generated with the following steps.
 
