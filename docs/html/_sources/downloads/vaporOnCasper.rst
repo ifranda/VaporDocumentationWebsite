@@ -14,13 +14,13 @@ Connecting to a Remote Desktop
 
 .. code-block:: console
 
-    ssh -t -l YOUR_USERNAME casper.ucar.edu /glade/u/apps/opt/vncmgr/bin/vncmgr create VAPOR -A PROJECT_CODE -t 2:00:00 --gl-desktop
+    ssh -t -l YOUR_USERNAME casper.ucar.edu /glade/u/apps/opt/vncmgr/bin/vncmgr create VAPOR -A PROJECT_CODE -t 4:00:00 --gl-desktop
 
 .. note::
 
-    * The ``--gl-desktop`` flag allows the server to use GPU resources. 
-    * The ``-t 2:00:00`` flag specifies the amount of time the VNC server will run (in this case, two hours). Without this tag, the command will default to four hours. 
-    * For more details, you can run vncmgr --help when signed into Casper.
+    * The ``--gl-desktop`` flag allows the server to use GPU resources, which is important for running VAPOR.
+    * The ``-t 4:00:00`` flag specifies the time the server will run for in HH:MM:SS format. The default is 4 hours and the maximum is 24 hours.
+    * For more details, you can run ``vncmgr --help`` when signed into Casper.
 
 
 2. After following the prompts to log in, you should get a message that looks like this:
@@ -55,7 +55,9 @@ This message will provide you with the localhost information and the one-time pa
 Running VAPOR on your Remote Desktop
 ------------------------------------
 
-1. Before launching VAPOR, it is recommended that you change the desktop's settings for clicking files and folders. This will make it easier to open multi-file datasets. Navigate to `System Settings`, then under `Clicking files or folders` select `Selects them`
+Once you've connected to your remote desktop, follow these steps to run VAPOR:
+
+1. Before launching VAPOR, it is recommended that you change the desktop's settings for clicking files and folders. This will make it easier to open multi-file datasets. Navigate to "System Settings", then under "Clicking files or folders" select "Selects them"
 
 .. figure:: ../_images/casper_settings.png
     :align: center
