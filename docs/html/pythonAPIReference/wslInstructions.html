@@ -502,11 +502,11 @@ document.write(`
 </pre></div>
 </div>
 </li>
-<li><p>Restart Ubuntu for these changes to take effect.</p></li>
+<li><p>Follow the instructions it provides, and make sure to say “yes” when it asks if you want to update your shell profile to automatically initialize conda. Close and reopen Ubuntu for these changes to take effect.</p></li>
 <li><p>Install VAPOR Python using conda:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">conda create -n vapor_python</span>
 <span class="go">conda activate vapor_python</span>
-<span class="go">conda install -c conda-forge -c ncar vapor</span>
+<span class="go">conda install -c conda-forge -c ncar-vapor vapor</span>
 </pre></div>
 </div>
 </li>
@@ -522,6 +522,7 @@ document.write(`
 </div>
 </li>
 </ol>
+<p>Note: VS code extensions that you have installed on your Windows machine will not be automatically installed in your WSL environment. Before running a Jupyter notebook in WSL, make sure you install the Jupyter extension.</p>
 </section>
 
 

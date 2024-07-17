@@ -20,14 +20,14 @@ To run VAPOR Python on Windows distributions, we recommend installing the Window
        wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
        bash Miniconda3-latest-Linux-x86_64.sh
 
-6. Restart Ubuntu for these changes to take effect.
+6. Follow the instructions it provides, and make sure to say "yes" when it asks if you want to update your shell profile to automatically initialize conda. Close and reopen Ubuntu for these changes to take effect.
 7. Install VAPOR Python using conda:
 
    .. code-block:: console
 
        conda create -n vapor_python
        conda activate vapor_python
-       conda install -c conda-forge -c ncar vapor
+       conda install -c conda-forge -c ncar-vapor vapor
 
 8. After vapor installation is complete, you can open a coding environment of your choice:
 
@@ -43,3 +43,6 @@ To run VAPOR Python on Windows distributions, we recommend installing the Window
    .. code-block:: console
 
        code .
+
+
+Note: VS code extensions that you have installed on your Windows machine will not be automatically installed in your WSL environment. Before running a Jupyter notebook in WSL, make sure you install the Jupyter extension.
