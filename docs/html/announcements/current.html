@@ -7,7 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VY29EEZ393"></script>
@@ -39,7 +39,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-binder.css" />
@@ -52,13 +52,16 @@
   <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'announcements/current';</script>
-    <link rel="icon" href="../_static/vaporVLogo.png"/>
+    <link rel="shortcut icon" href="../_static/vaporVLogo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Installation Instructions" href="../downloads/installationInstructions.html" />
@@ -159,7 +162,18 @@
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../downloads.html">Downloads</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
@@ -299,9 +313,9 @@
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -486,11 +500,38 @@ document.write(`
                   
   <section id="current-release">
 <span id="current"></span><h1>Current Release<a class="headerlink" href="#current-release" title="Permalink to this heading">#</a></h1>
-<p id="id1"><a class="reference external" href="https://forms.gle/xLGwLgYSiABbHe8t8">Download here</a></p>
-<p>April 11, 2024</p>
-<p>Vapor has released a minor version, 3.9.2!</p>
-<p>** What’s Changed **</p>
+<p id="id1"><strong>Install Here:</strong></p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Version</p></th>
+<th class="head"><p>Installer</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Mac M1</p></td>
+<td><a href="https://github.com/NCAR/VAPOR/releases/download/v3.9.2/VAPOR3-3.9.2-MacOS-M1.dmg" onclick="gtag('event', 'click', { 'event_category': 'Downloads', 'event_label': 'MacOS_M1' });">VAPOR-3.9.2-MacOS-M1.dmg</a></td>
+</tr>
+<tr class="row-odd"><td><p>Mac x86</p></td>
+<td><a href="https://github.com/NCAR/VAPOR/releases/download/v3.9.2/VAPOR3-3.9.2-MacOS-x86.dmg" onclick="gtag('event', 'click', { 'event_category': 'Downloads', 'event_label': 'MacOS_x86' });">VAPOR-3.9.2-MacOS-x86.dmg</a></td>
+</tr>
+<tr class="row-even"><td><p>Windows 64-bit</p></td>
+<td><a href="https://github.com/NCAR/VAPOR/releases/download/v3.9.2/VAPOR3-3.9.2-win64.exe" onclick="gtag('event', 'click', { 'event_category': 'Downloads', 'event_label': 'Windows_64' });">VAPOR-3.9.2-win64.exe</a></td>
+</tr>
+<tr class="row-odd"><td><p>Linux AppImage</p></td>
+<td><a href="https://github.com/NCAR/VAPOR/releases/download/v3.9.2/VAPOR-3.9.2-Linux-x86_64.AppImage" onclick="gtag('event', 'click', { 'event_category': 'Downloads', 'event_label': 'Linux_AppImage' });">VAPOR-3.9.2-Linux-x86_64.AppImage</a></td>
+</tr>
+<tr class="row-even"><td><p>Source Code (zip)</p></td>
+<td><a href="https://github.com/NCAR/VAPOR/archive/refs/tags/v3.9.2.zip" onclick="gtag('event', 'click', { 'event_category': 'Downloads', 'event_label': 'Source_Code_ZIP' });">Source code (zip)</a></td>
+</tr>
+<tr class="row-odd"><td><p>Source Code (tar)</p></td>
+<td><a href="https://github.com/NCAR/VAPOR/archive/refs/tags/v3.9.2.tar.gz" onclick="gtag('event', 'click', { 'event_category': 'Downloads', 'event_label': 'Source_Code_TAR.GZ' });">Source code (tar.gz)</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>What’s Changed</strong></p>
 <ul class="simple">
+<li><p>In 3.9.2, VAPOR’s Linux installer is now bundled as an AppImage which should work on most if not all Linux distributions. Once downloaded, the .AppImage file can be run from anywhere on your computer, including a USB drive. To run VAPOR’s command line tools, simply run the .AppImage followed by the tool you need and the arguments for that tool. Launch the .AppImage with the –help flag for a full list of options.</p></li>
 <li><p>Issue3520 by &#64;sgpearse in <a class="github reference external" href="https://github.com/NCAR/VAPOR/pull/3521">NCAR/VAPOR#3521</a></p></li>
 <li><p>change default interpolation order by &#64;shaomeng in <a class="github reference external" href="https://github.com/NCAR/VAPOR/pull/3523">NCAR/VAPOR#3523</a></p></li>
 <li><p>Fix renderer list right click menu for particles by &#64;StasJ in <a class="github reference external" href="https://github.com/NCAR/VAPOR/pull/3528">NCAR/VAPOR#3528</a></p></li>
