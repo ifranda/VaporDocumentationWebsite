@@ -510,7 +510,7 @@ document.write(`
 <section id="connecting-to-a-remote-desktop">
 <h2>Connecting to a Remote Desktop<a class="headerlink" href="#connecting-to-a-remote-desktop" title="Permalink to this heading">#</a></h2>
 <ol class="arabic simple">
-<li><p>Start a VNC session on Casper by running the following command in your terminal. Replace <code class="docutils literal notranslate"><span class="pre">YOUR_USERNAME</span></code> with your Casper login and <code class="docutils literal notranslate"><span class="pre">PROJECT_CODE</span></code> with the code associated with your project.</p></li>
+<li><p>Start a VNC session on Casper by running the following command in a terminal on your local machine. Replace <code class="docutils literal notranslate"><span class="pre">YOUR_USERNAME</span></code> with your Casper login and <code class="docutils literal notranslate"><span class="pre">PROJECT_CODE</span></code> with the code associated with your project.</p></li>
 </ol>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">ssh -t -l YOUR_USERNAME casper.ucar.edu /glade/u/apps/opt/vncmgr/bin/vncmgr create VAPOR -A PROJECT_CODE -t 4:00:00 --gl-desktop</span>
 </pre></div>
@@ -520,7 +520,7 @@ document.write(`
 <ul class="simple">
 <li><p>The <code class="docutils literal notranslate"><span class="pre">--gl-desktop</span></code> flag allows the server to use GPU resources, which is important for running VAPOR.</p></li>
 <li><p>The <code class="docutils literal notranslate"><span class="pre">-t</span> <span class="pre">4:00:00</span></code> flag specifies the time the server will run for in HH:MM:SS format. The default is 4 hours and the maximum is 24 hours.</p></li>
-<li><p>For more details, you can run <code class="docutils literal notranslate"><span class="pre">vncmgr</span> <span class="pre">--help</span></code> when signed into Casper.</p></li>
+<li><p>For additional options, you can run <code class="docutils literal notranslate"><span class="pre">vncmgr</span> <span class="pre">--help</span></code> when signed into Casper.</p></li>
 </ul>
 </div>
 <ol class="arabic simple" start="2">
@@ -554,10 +554,10 @@ document.write(`
 <h2>Running VAPOR on your Remote Desktop<a class="headerlink" href="#running-vapor-on-your-remote-desktop" title="Permalink to this heading">#</a></h2>
 <p>Once you’ve connected to your remote desktop, follow these steps to run VAPOR:</p>
 <ol class="arabic simple">
-<li><p>Before launching VAPOR, it is recommended that you change the desktop’s settings for clicking files and folders. This will make it easier to open multi-file datasets. Navigate to “System Settings”, then under “Clicking files or folders” select “Selects them”</p></li>
+<li><p>Before launching VAPOR, it is recommended to change the desktop’s settings for clicking files and folders. This will make it easier to open multi-file datasets. Navigate to “System Settings”, then under “Clicking files or folders” select “Selects them” and click “Apply”. Capser will save your preferences between sessions, so this only needs to be done once.</p></li>
 </ol>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../_images/casper_settings.png"><img alt="../_images/casper_settings.png" src="../_images/casper_settings.png" style="width: 80%;" /></a>
+<a class="reference internal image-reference" href="../_images/casperSettings.png"><img alt="../_images/casperSettings.png" src="../_images/casperSettings.png" style="width: 80%;" /></a>
 </figure>
 <ol class="arabic simple" start="2">
 <li><p>To run VAPOR, open Konsole from the task bar at the bottom and run the following commands:</p></li>
@@ -572,7 +572,7 @@ document.write(`
 <p>Your remote desktop will use compute resources until either the amount of time you specified has elapsed or until you manually end it. To end your session manually, follow these steps:</p>
 <ol class="arabic simple">
 <li><p>Sign into Casper and run the <code class="docutils literal notranslate"><span class="pre">vncmgr</span></code> command. You will be able to see your active servers that are currently running</p></li>
-<li><p>Type <code class="docutils literal notranslate"><span class="pre">kill</span> <span class="pre">VAPOR</span></code> to end the session you created</p></li>
+<li><p>Type <code class="docutils literal notranslate"><span class="pre">kill</span> <span class="pre">VAPOR</span></code> to end the session named VAPOR</p></li>
 <li><p>Wait for the session to end</p></li>
 </ol>
 </section>

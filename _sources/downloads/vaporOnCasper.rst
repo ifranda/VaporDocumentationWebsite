@@ -10,7 +10,7 @@ Prerequisites
 
 Connecting to a Remote Desktop
 ------------------------------
-1. Start a VNC session on Casper by running the following command in your terminal. Replace ``YOUR_USERNAME`` with your Casper login and ``PROJECT_CODE`` with the code associated with your project.
+1. Start a VNC session on Casper by running the following command in a terminal on your local machine. Replace ``YOUR_USERNAME`` with your Casper login and ``PROJECT_CODE`` with the code associated with your project.
 
 .. code-block:: console
 
@@ -20,7 +20,7 @@ Connecting to a Remote Desktop
 
     * The ``--gl-desktop`` flag allows the server to use GPU resources, which is important for running VAPOR.
     * The ``-t 4:00:00`` flag specifies the time the server will run for in HH:MM:SS format. The default is 4 hours and the maximum is 24 hours.
-    * For more details, you can run ``vncmgr --help`` when signed into Casper.
+    * For additional options, you can run ``vncmgr --help`` when signed into Casper.
 
 
 2. After following the prompts to log in, you should get a message that looks like this:
@@ -57,9 +57,9 @@ Running VAPOR on your Remote Desktop
 
 Once you've connected to your remote desktop, follow these steps to run VAPOR:
 
-1. Before launching VAPOR, it is recommended that you change the desktop's settings for clicking files and folders. This will make it easier to open multi-file datasets. Navigate to "System Settings", then under "Clicking files or folders" select "Selects them"
+1. Before launching VAPOR, it is recommended to change the desktop's settings for clicking files and folders. This will make it easier to open multi-file datasets. Navigate to "System Settings", then under "Clicking files or folders" select "Selects them" and click "Apply". Capser will save your preferences between sessions, so this only needs to be done once.
 
-.. figure:: ../_images/casper_settings.png
+.. figure:: ../_images/casperSettings.png
     :align: center
     :figclass: align-center
     :width: 80%
@@ -76,5 +76,5 @@ Ending your Session
 Your remote desktop will use compute resources until either the amount of time you specified has elapsed or until you manually end it. To end your session manually, follow these steps:
 
 1. Sign into Casper and run the ``vncmgr`` command. You will be able to see your active servers that are currently running
-2. Type ``kill VAPOR`` to end the session you created
+2. Type ``kill VAPOR`` to end the session named VAPOR
 3. Wait for the session to end
