@@ -1,0 +1,96 @@
+name: Update Documentation
+
+on:
+  repository_dispatch:
+    types: [update-docs]
+  workflow_dispatch:
+  push:
+    branches:
+        - Actions
+
+jobs:
+  update-docs:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout VaporDocumentationWebsite repo
+        uses: actions/checkout@v4
+        with:
+            ref: 'Actions'
+
+      - name: Install jq
+        run: sudo apt-get install -y jq
+
+      - name: Fetch latest release info
+        id: fetch_release
+        run: |
+          latest_release=$(curl -H "Accept: application/vnd.github.v4+json" https://api.github.com/repos/NCAR/VAPOR/releases/latest)
+          release_name=$(echo $latest_release | jq -r .tag_name | sed 's/^v//')
+          release_notes=$(echo $latest_release | jq -r .body)
+          echo "RELEASE_NAME=$release_name" >> $GITHUB_ENV
+          echo "RELEASE_NOTES<<EOF" >> $GITHUB_ENV
+          echo "$release_notes" >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
+
+      - name: Update docs/announcements/current.rst
+        run: |
+          current_name="docs/announcements/current.rst"
+          echo ".. _current:" > "$current_name"
+          echo "" >> "$current_name"
+          echo "Current Release" >> "$current_name"
+          echo "---------------" >> "$current_name"
+          echo "" >> "$current_name"
+          echo ".. include:: ${RELEASE_NAME}.rst" >> "$current_name"
+        env:
+          RELEASE_NAME: ${{ env.RELEASE_NAME }}
+
+      - name: Update docs/downloads.rst, docs/index.rst, docs/conf.py
+        run: |
+          sed -i "s|.. include:: announcements/.*.rst|.. include:: announcements/${RELEASE_NAME}.rst|g" "docs/downloads.rst"
+          sed -i "s|.. include:: announcements/.*.rst|.. include:: announcements/${RELEASE_NAME}.rst|g" "docs/index.rst"
+          sed -i "s|release = .*|release = '${RELEASE_NAME}'|g" "docs/conf.py"
+          cat "docs/conf.py"
+        env:
+          RELEASE_NAME: ${{ env.RELEASE_NAME }}
+
+      - name: Create release notes file
+        run: |
+          file_name="docs/announcements/${RELEASE_NAME}.rst"
+          template_name="docs/announcements/template.rst"
+          echo ".. _${RELEASE_NAME}:" > "$file_name"
+          cat "$template_name" >> "$file_name"
+          echo "" >> "$file_name"
+          sed -i "s/RELEASE_TAG/$RELEASE_NAME/g" "$file_name"
+          echo "$RELEASE_NOTES" >> "$file_name"
+          sed -i 's/^## \(.*\)/**\1**\n/g' "$file_name"
+          tr -d '\r' < "$file_name" > temp_file && mv temp_file "$file_name"
+          cat "$file_name"
+        env:
+          RELEASE_NAME: ${{ env.RELEASE_NAME }}
+          RELEASE_NOTES: ${{ env.RELEASE_NOTES }}
+
+      - name: Set up Conda
+        uses: conda-incubator/setup-miniconda@v3
+        with:
+          activate-environment: VaporDocumentationWebsite
+          environment-file: environment.yml
+          auto-update-conda: true
+          python-version: 3.9
+
+      - name: Build Sphinx documentation
+        run: |
+          conda init bash
+          source ~/.bashrc
+          conda activate VaporDocumentationWebsite
+          pip install sphinxcontrib-googleanalytics
+          pip install sphinx-copybutton
+          cd docs
+          make html
+          cp -r html/* ../
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Release ${{ env.RELEASE_NAME }}"
+          branch: Actions
