@@ -10,5 +10,6 @@ Python API Reference
    :maxdepth: 1
 
    pythonAPIReference/downloadAndInstallation.rst
-   pythonAPIReference/examples.rst
+   pythonAPIReference/wslInstructions.rst
    pythonAPIReference/classReference.rst
+   Examples <https://projectpythia.org/vapor-python-cookbook/README.html>

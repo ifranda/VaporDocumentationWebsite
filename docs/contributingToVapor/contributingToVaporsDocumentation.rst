@@ -70,6 +70,7 @@ If you want to make changes to the python class reference, there are a couple of
     conda env create -f environment.yml
     conda activate VaporDocumentationWebsite
     pip install sphinxcontrib-googleanalytics
+    pip install sphinx-copybutton
 
 4. Build Vapor Python from the source code in your VAPOR clone following `these instructions <https://ncar.github.io/VaporDocumentationWebsite/contributingToVapor/codeContributions.html#building-vapor-s-python-api-from-source>`_.
 5. Generate the html on your local machine

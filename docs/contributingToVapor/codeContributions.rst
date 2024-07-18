@@ -229,13 +229,13 @@ Adding to the Code Base
 
 After successfully compiling Vapor, you can make changes to the code base.  Make sure to follow Vapor's `Code Conventions <https://github.com/NCAR/VAPOR/wiki/Vapor-Coding-Convention>`_.  If building on a UNIX system, eliminate all compiler warnings.
 
-What pieces of code you add or modify will depend on the issue you're trying to fix.  Most often, contributors will be doing one of two things:
+.. What pieces of code you add or modify will depend on the issue you're trying to fix.  Most often, contributors will be doing one of two things:
 
-.. toctree::
-   :maxdepth: 1
+.. .. toctree::
+..    :maxdepth: 1
 
-   createDataReader
-   createRenderer
+..    createDataReader
+..    createRenderer
 
 Build and Test an Installer
 ---------------------------

@@ -38,7 +38,8 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery.css" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery-binder.css" />
     <link rel="stylesheet" type="text/css" href="_static/sg_gallery-dataframe.css" />
@@ -50,14 +51,13 @@
   <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/sphinx_highlight.js"></script>
-    <script src="_static/scripts/sphinx-book-theme.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'genindex';</script>
-    <link rel="shortcut icon" href="_static/vaporVLogo.png"/>
+    <link rel="icon" href="_static/vaporVLogo.png"/>
     <link rel="index" title="Index" href="#" />
     <link rel="search" title="Search" href="search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -158,23 +158,13 @@
   
   
 </a></div>
-        <div class="sidebar-primary-item">
-
- <script>
- document.write(`
-   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script></div>
-        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="downloads.html">Downloads</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="announcements/current.html">Current Release</a></li>
 <li class="toctree-l2"><a class="reference internal" href="downloads/installationInstructions.html">Installation Instructions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="downloads/vaporOnCasper.html">Running VAPOR on Casper</a></li>
 <li class="toctree-l2"><a class="reference internal" href="downloads/sampleData.html">Sample Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="downloads/thirdPartyLibraries.html">Third Party Libraries</a></li>
 <li class="toctree-l2"><a class="reference internal" href="downloads/vapor2.html">VAPOR 2 (Legacy)</a></li>
@@ -237,7 +227,7 @@
 </details></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="pythonAPIReference.html">Python API Reference</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="pythonAPIReference/downloadAndInstallation.html">Download and Installation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pythonAPIReference/examples.html">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pythonAPIReference/wslInstructions.html">Windows Instructions</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="pythonAPIReference/classReference.html">Class Reference</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3 has-children"><a class="reference internal" href="pythonAPIReference/userModules/vapor.html">User Modules</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l4"><a class="reference internal" href="pythonAPIReference/userModules/vapor.animation.html">vapor.animation module</a></li>
@@ -264,6 +254,7 @@
 </details></li>
 </ul>
 </details></li>
+<li class="toctree-l2"><a class="reference external" href="https://projectpythia.org/vapor-python-cookbook/README.html">Examples</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1"><a class="reference external" href="https://www.youtube.com/channel/UCpf-d1GDO1sotzjJ2t_QkDw">YouTube Channel</a></li>
@@ -271,9 +262,7 @@
 <li class="toctree-l1 has-children"><a class="reference internal" href="contributingToVapor.html">Contributing to Vapor</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="contributingToVapor/whereToStart.html">Where to start?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="contributingToVapor/bugReportsAndFeatureRequests.html">Bug Reports and Feature Requests</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="contributingToVapor/codeContributions.html">Code Contributions</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
-</ul>
-</details></li>
+<li class="toctree-l2"><a class="reference internal" href="contributingToVapor/codeContributions.html">Code Contributions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="contributingToVapor/contributingToVaporsDocumentation.html">Contributing to Vapor’s Documentation</a></li>
 
 <li class="toctree-l2"><a class="reference internal" href="contributingToVapor/contributingToVaporsGallery.html">Contributing to Vapor’s Gallery</a></li>
@@ -309,9 +298,9 @@
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</button></div>
+</label></div>
       
     </div>
   
@@ -674,8 +663,6 @@ document.write(`
 </li>
       <li><a href="pythonAPIReference/userModules/vapor.camera.html#vapor.camera.Camera.GetDirection">GetDirection() (vapor.camera.Camera method)</a>
 </li>
-      <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.ParticleRenderer.GetDirectionScale">GetDirectionScale() (vapor.renderer.ParticleRenderer method)</a>
-</li>
       <li><a href="pythonAPIReference/userModules/vapor.annotations.html#vapor.annotations.SceneAnnotation.GetDomainColor">GetDomainColor (vapor.annotations.SceneAnnotation attribute)</a>
 </li>
       <li><a href="pythonAPIReference/devModules/vapor.config.html#vapor.config.GetDoxygenRoot">GetDoxygenRoot() (in module vapor.config)</a>
@@ -772,8 +759,6 @@ document.write(`
 </li>
       <li><a href="pythonAPIReference/userModules/vapor.dataset.html#vapor.dataset.Dataset.GetName">GetName() (vapor.dataset.Dataset method)</a>
 </li>
-      <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.FlowRenderer.GetNeedFlowlineOutput">GetNeedFlowlineOutput (vapor.renderer.FlowRenderer attribute)</a>
-</li>
       <li><a href="pythonAPIReference/userModules/vapor.annotations.html#vapor.annotations.ColorbarAnnotation.GetNumDigits">GetNumDigits (vapor.annotations.ColorbarAnnotation attribute)</a>
 </li>
       <li><a href="pythonAPIReference/userModules/vapor.annotations.html#vapor.annotations.ColorbarAnnotation.GetNumTicks">GetNumTicks (vapor.annotations.ColorbarAnnotation attribute)</a>
@@ -793,37 +778,21 @@ document.write(`
       <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.VolumeRenderer.GetPhongAmbient">GetPhongAmbient (vapor.renderer.VolumeRenderer attribute)</a>
 </li>
       <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.FlowRenderer.GetPhongAmbient">GetPhongAmbient() (vapor.renderer.FlowRenderer method)</a>
-
-      <ul>
-        <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.ParticleRenderer.GetPhongAmbient">(vapor.renderer.ParticleRenderer method)</a>
 </li>
-      </ul></li>
       <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.VolumeRenderer.GetPhongDiffuse">GetPhongDiffuse (vapor.renderer.VolumeRenderer attribute)</a>
 </li>
       <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.FlowRenderer.GetPhongDiffuse">GetPhongDiffuse() (vapor.renderer.FlowRenderer method)</a>
-
-      <ul>
-        <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.ParticleRenderer.GetPhongDiffuse">(vapor.renderer.ParticleRenderer method)</a>
 </li>
-      </ul></li>
       <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.VolumeRenderer.GetPhongShininess">GetPhongShininess (vapor.renderer.VolumeRenderer attribute)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.FlowRenderer.GetPhongShininess">GetPhongShininess() (vapor.renderer.FlowRenderer method)</a>
-
-      <ul>
-        <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.ParticleRenderer.GetPhongShininess">(vapor.renderer.ParticleRenderer method)</a>
 </li>
-      </ul></li>
       <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.VolumeRenderer.GetPhongSpecular">GetPhongSpecular (vapor.renderer.VolumeRenderer attribute)</a>
 </li>
       <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.FlowRenderer.GetPhongSpecular">GetPhongSpecular() (vapor.renderer.FlowRenderer method)</a>
-
-      <ul>
-        <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.ParticleRenderer.GetPhongSpecular">(vapor.renderer.ParticleRenderer method)</a>
 </li>
-      </ul></li>
       <li><a href="pythonAPIReference/userModules/vapor.camera.html#vapor.camera.Camera.GetPosition">GetPosition() (vapor.camera.Camera method)</a>
 </li>
       <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.Renderer.GetPrimaryTransferFunction">GetPrimaryTransferFunction() (vapor.renderer.Renderer method)</a>
@@ -865,11 +834,7 @@ document.write(`
       <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.FlowRenderer.GetRenderGlyphType">GetRenderGlyphType() (vapor.renderer.FlowRenderer method)</a>
 </li>
       <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.FlowRenderer.GetRenderRadiusScalar">GetRenderRadiusScalar() (vapor.renderer.FlowRenderer method)</a>
-
-      <ul>
-        <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.ParticleRenderer.GetRenderRadiusScalar">(vapor.renderer.ParticleRenderer method)</a>
 </li>
-      </ul></li>
       <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.Renderer.GetRenderRegion">GetRenderRegion() (vapor.renderer.Renderer method)</a>
 </li>
       <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.FlowRenderer.GetRenderShowStreamDir">GetRenderShowStreamDir() (vapor.renderer.FlowRenderer method)</a>
@@ -902,8 +867,6 @@ document.write(`
 </li>
       <li><a href="pythonAPIReference/userModules/vapor.annotations.html#vapor.annotations.AxisAnnotation.GetShowAxisArrows">GetShowAxisArrows (vapor.annotations.AxisAnnotation attribute)</a>
 </li>
-      <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.ParticleRenderer.GetShowDirection">GetShowDirection() (vapor.renderer.ParticleRenderer method)</a>
-</li>
       <li><a href="pythonAPIReference/userModules/vapor.annotations.html#vapor.annotations.ColorbarAnnotation.GetSize">GetSize (vapor.annotations.ColorbarAnnotation attribute)</a>
 </li>
       <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.SliceRenderer.GetSliceOffset">GetSliceOffset() (vapor.renderer.SliceRenderer method)</a>
@@ -923,8 +886,6 @@ document.write(`
       <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.SliceRenderer.GetSlicePlaneRotation">GetSlicePlaneRotation (vapor.renderer.SliceRenderer attribute)</a>
 </li>
       <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.FlowRenderer.GetSteadyNumOfSteps">GetSteadyNumOfSteps (vapor.renderer.FlowRenderer attribute)</a>
-</li>
-      <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.ParticleRenderer.GetStride">GetStride() (vapor.renderer.ParticleRenderer method)</a>
 </li>
       <li><a href="pythonAPIReference/userModules/vapor.camera.html#vapor.camera.Camera.GetTarget">GetTarget() (vapor.camera.Camera method)</a>
 </li>
@@ -1179,15 +1140,13 @@ document.write(`
 </li>
       <li><a href="pythonAPIReference/devModules/vapor.params.html#vapor.params.ParamsTagWrapperList">ParamsTagWrapperList (class in vapor.params)</a>
 </li>
-      <li><a href="pythonAPIReference/devModules/vapor.params.html#vapor.params.ParamsTagWrapperLong">ParamsTagWrapperLong (class in vapor.params)</a>
-</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="pythonAPIReference/devModules/vapor.params.html#vapor.params.ParamsTagWrapperLong">ParamsTagWrapperLong (class in vapor.params)</a>
+</li>
       <li><a href="pythonAPIReference/devModules/vapor.params.html#vapor.params.ParamsTagWrapperString">ParamsTagWrapperString (class in vapor.params)</a>
 </li>
       <li><a href="pythonAPIReference/devModules/vapor.params.html#vapor.params.ParamsWrapper">ParamsWrapper (class in vapor.params)</a>
-</li>
-      <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.ParticleRenderer">ParticleRenderer (class in vapor.renderer)</a>
 </li>
       <li><a href="pythonAPIReference/devModules/vapor.config.html#vapor.config.PathExists">PathExists() (in module vapor.config)</a>
 </li>
@@ -1303,8 +1262,6 @@ document.write(`
 </li>
       <li><a href="pythonAPIReference/userModules/vapor.camera.html#vapor.camera.Camera.SetDirection">SetDirection() (vapor.camera.Camera method)</a>
 </li>
-      <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.ParticleRenderer.SetDirectionScale">SetDirectionScale() (vapor.renderer.ParticleRenderer method)</a>
-</li>
       <li><a href="pythonAPIReference/userModules/vapor.annotations.html#vapor.annotations.SceneAnnotation.SetDomainColor">SetDomainColor (vapor.annotations.SceneAnnotation attribute)</a>
 </li>
       <li><a href="pythonAPIReference/userModules/vapor.annotations.html#vapor.annotations.ColorbarAnnotation.SetEnabled">SetEnabled (vapor.annotations.ColorbarAnnotation attribute)</a>
@@ -1322,8 +1279,6 @@ document.write(`
       <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.FlowRenderer.SetFlowDirection">SetFlowDirection (vapor.renderer.FlowRenderer attribute)</a>
 </li>
       <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.FlowRenderer.SetFlowlineOutputFilename">SetFlowlineOutputFilename (vapor.renderer.FlowRenderer attribute)</a>
-</li>
-      <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.FlowRenderer.SetFlowOutputMoreVariables">SetFlowOutputMoreVariables (vapor.renderer.FlowRenderer attribute)</a>
 </li>
       <li><a href="pythonAPIReference/userModules/vapor.annotations.html#vapor.annotations.ColorbarAnnotation.SetFontSize">SetFontSize (vapor.annotations.ColorbarAnnotation attribute)</a>
 </li>
@@ -1363,8 +1318,6 @@ document.write(`
 </li>
       <li><a href="pythonAPIReference/userModules/vapor.annotations.html#vapor.annotations.AxisAnnotation.SetMinTics">SetMinTics (vapor.annotations.AxisAnnotation attribute)</a>
 </li>
-      <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.FlowRenderer.SetNeedFlowlineOutput">SetNeedFlowlineOutput (vapor.renderer.FlowRenderer attribute)</a>
-</li>
       <li><a href="pythonAPIReference/userModules/vapor.annotations.html#vapor.annotations.ColorbarAnnotation.SetNumDigits">SetNumDigits (vapor.annotations.ColorbarAnnotation attribute)</a>
 </li>
       <li><a href="pythonAPIReference/userModules/vapor.annotations.html#vapor.annotations.ColorbarAnnotation.SetNumTicks">SetNumTicks (vapor.annotations.ColorbarAnnotation attribute)</a>
@@ -1386,41 +1339,25 @@ document.write(`
       <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.VolumeRenderer.SetPhongAmbient">SetPhongAmbient (vapor.renderer.VolumeRenderer attribute)</a>
 </li>
       <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.FlowRenderer.SetPhongAmbient">SetPhongAmbient() (vapor.renderer.FlowRenderer method)</a>
-
-      <ul>
-        <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.ParticleRenderer.SetPhongAmbient">(vapor.renderer.ParticleRenderer method)</a>
 </li>
-      </ul></li>
       <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.VolumeRenderer.SetPhongDiffuse">SetPhongDiffuse (vapor.renderer.VolumeRenderer attribute)</a>
 </li>
       <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.FlowRenderer.SetPhongDiffuse">SetPhongDiffuse() (vapor.renderer.FlowRenderer method)</a>
-
-      <ul>
-        <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.ParticleRenderer.SetPhongDiffuse">(vapor.renderer.ParticleRenderer method)</a>
 </li>
-      </ul></li>
       <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.VolumeRenderer.SetPhongShininess">SetPhongShininess (vapor.renderer.VolumeRenderer attribute)</a>
 </li>
       <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.FlowRenderer.SetPhongShininess">SetPhongShininess() (vapor.renderer.FlowRenderer method)</a>
-
-      <ul>
-        <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.ParticleRenderer.SetPhongShininess">(vapor.renderer.ParticleRenderer method)</a>
 </li>
-      </ul></li>
       <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.VolumeRenderer.SetPhongSpecular">SetPhongSpecular (vapor.renderer.VolumeRenderer attribute)</a>
 </li>
       <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.FlowRenderer.SetPhongSpecular">SetPhongSpecular() (vapor.renderer.FlowRenderer method)</a>
-
-      <ul>
-        <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.ParticleRenderer.SetPhongSpecular">(vapor.renderer.ParticleRenderer method)</a>
 </li>
-      </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="pythonAPIReference/userModules/vapor.camera.html#vapor.camera.Camera.SetPosition">SetPosition() (vapor.camera.Camera method)</a>
 </li>
       <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.FlowRenderer.SetRakeBiasStrength">SetRakeBiasStrength (vapor.renderer.FlowRenderer attribute)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.FlowRenderer.SetRakeBiasVariable">SetRakeBiasVariable (vapor.renderer.FlowRenderer attribute)</a>
 </li>
       <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.FlowRenderer.SetRandomNumOfSeeds">SetRandomNumOfSeeds (vapor.renderer.FlowRenderer attribute)</a>
@@ -1448,11 +1385,7 @@ document.write(`
       <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.FlowRenderer.SetRenderGlyphType">SetRenderGlyphType() (vapor.renderer.FlowRenderer method)</a>
 </li>
       <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.FlowRenderer.SetRenderRadiusScalar">SetRenderRadiusScalar() (vapor.renderer.FlowRenderer method)</a>
-
-      <ul>
-        <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.ParticleRenderer.SetRenderRadiusScalar">(vapor.renderer.ParticleRenderer method)</a>
 </li>
-      </ul></li>
       <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.FlowRenderer.SetRenderShowStreamDir">SetRenderShowStreamDir() (vapor.renderer.FlowRenderer method)</a>
 </li>
       <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.FlowRenderer.SetRenderType">SetRenderType() (vapor.renderer.FlowRenderer method)</a>
@@ -1475,8 +1408,6 @@ document.write(`
 </li>
       <li><a href="pythonAPIReference/userModules/vapor.annotations.html#vapor.annotations.AxisAnnotation.SetShowAxisArrows">SetShowAxisArrows (vapor.annotations.AxisAnnotation attribute)</a>
 </li>
-      <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.ParticleRenderer.SetShowDirection">SetShowDirection() (vapor.renderer.ParticleRenderer method)</a>
-</li>
       <li><a href="pythonAPIReference/userModules/vapor.annotations.html#vapor.annotations.ColorbarAnnotation.SetSize">SetSize (vapor.annotations.ColorbarAnnotation attribute)</a>
 </li>
       <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.SliceRenderer.SetSliceOffset">SetSliceOffset() (vapor.renderer.SliceRenderer method)</a>
@@ -1490,8 +1421,6 @@ document.write(`
       <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.SliceRenderer.SetSlicePlaneOrientationMode">SetSlicePlaneOrientationMode() (vapor.renderer.SliceRenderer method)</a>
 </li>
       <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.FlowRenderer.SetSteadyNumOfSteps">SetSteadyNumOfSteps (vapor.renderer.FlowRenderer attribute)</a>
-</li>
-      <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.ParticleRenderer.SetStride">SetStride() (vapor.renderer.ParticleRenderer method)</a>
 </li>
       <li><a href="pythonAPIReference/userModules/vapor.camera.html#vapor.camera.Camera.SetTarget">SetTarget() (vapor.camera.Camera method)</a>
 </li>
@@ -1601,12 +1530,8 @@ document.write(`
 </li>
       <li><a href="vaporApplicationReference/otherTools/vaporWrfModule.html#vapor_wrf.TK">TK() (in module vapor_wrf)</a>
 </li>
-      <li><a href="pythonAPIReference/userModules/vapor.camera.html#vapor.camera.Camera.TrackMovingDomain">TrackMovingDomain() (vapor.camera.Camera method)</a>
-</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="pythonAPIReference/userModules/vapor.camera.html#vapor.camera.Camera.TrackMovingDomainRenderRegions">TrackMovingDomainRenderRegions() (vapor.camera.Camera method)</a>
-</li>
       <li><a href="pythonAPIReference/userModules/vapor.transferfunction.html#vapor.transferfunction.TransferFunction">TransferFunction (class in vapor.transferfunction)</a>
 </li>
       <li><a href="pythonAPIReference/userModules/vapor.transform.html#vapor.transform.Transform">Transform (class in vapor.transform)</a>
@@ -1724,6 +1649,8 @@ document.write(`
         <li><a href="pythonAPIReference/userModules/vapor.session.html#module-vapor.session">module</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     vapor.smartwrapper
 
@@ -1731,8 +1658,6 @@ document.write(`
         <li><a href="pythonAPIReference/devModules/vapor.smartwrapper.html#module-vapor.smartwrapper">module</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     vapor.transferfunction
 
@@ -1778,8 +1703,6 @@ document.write(`
         <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.ImageRenderer.VaporName">(vapor.renderer.ImageRenderer attribute)</a>
 </li>
         <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.ModelRenderer.VaporName">(vapor.renderer.ModelRenderer attribute)</a>
-</li>
-        <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.ParticleRenderer.VaporName">(vapor.renderer.ParticleRenderer attribute)</a>
 </li>
         <li><a href="pythonAPIReference/userModules/vapor.renderer.html#vapor.renderer.Renderer.VaporName">(vapor.renderer.Renderer attribute)</a>
 </li>
