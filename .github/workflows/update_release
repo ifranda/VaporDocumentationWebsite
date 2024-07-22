@@ -61,6 +61,7 @@ jobs:
           echo ".. _${RELEASE_NAME}:" > "$file_name"
           cat "$template_name" >> "$file_name"
           echo "" >> "$file_name"
+          echo "" >> "$file_name"
           sed -i "s/RELEASE_TAG/$RELEASE_NAME/g" "$file_name"
           echo "$RELEASE_NOTES" >> "$file_name"
           sed -i 's/^## \(.*\)/**\1**\n/g' "$file_name"
