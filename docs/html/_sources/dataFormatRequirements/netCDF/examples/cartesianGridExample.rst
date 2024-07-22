@@ -171,6 +171,10 @@ Plot a 2D cross section of temperature
 
       :download:`Download Python source code: cartesianGridExample.py <cartesianGridExample.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-zip
+
+      :download:`Download zipped: cartesianGridExample.zip <cartesianGridExample.zip>`
+
 
 .. only:: html
 

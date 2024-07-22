@@ -229,6 +229,10 @@ Clean up intermediate translated file
 
       :download:`Download Python source code: makeGeotiff.py <makeGeotiff.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-zip
+
+      :download:`Download zipped: makeGeotiff.zip <makeGeotiff.zip>`
+
 
 .. only:: html
 

@@ -39,7 +39,7 @@ A demonstration can be viewed below, and the sample data used in these examples 
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="The sample data for this script can be downloaded here:     https://github.com/NCAR/VAPOR-Data/...">
+    <div class="sphx-glr-thumbcontainer" tooltip="The sample data for this script can be downloaded here:     https://github.com/NCAR/VAPOR-Data/blob/main/netCDF/simple.nc">
 
 .. only:: html
 
@@ -56,7 +56,7 @@ A demonstration can be viewed below, and the sample data used in these examples 
 
 .. raw:: html
 
-    <div class="sphx-glr-thumbcontainer" tooltip="The sample data for this script can be downloaded here:     https://github.com/NCAR/VAPOR-Data/...">
+    <div class="sphx-glr-thumbcontainer" tooltip="The sample data for this script can be downloaded here:     https://github.com/NCAR/VAPOR-Data/blob/main/netCDF/simple.nc">
 
 .. only:: html
 

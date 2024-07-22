@@ -171,6 +171,10 @@ Plot a 2D cross section of temperature
 
       :download:`Download Python source code: rectilinearGridExample.py <rectilinearGridExample.py>`
 
+    .. container:: sphx-glr-download sphx-glr-download-zip
+
+      :download:`Download zipped: rectilinearGridExample.zip <rectilinearGridExample.zip>`
+
 
 .. only:: html
 
