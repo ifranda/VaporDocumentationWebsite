@@ -1,7 +1,7 @@
 .. raw:: html
 
    <div style="text-align: center;">
-       <h2>Download VAPOR's Latest Release (RELEASE_TAG)</h2>
+       <h2>Download VAPOR's Latest Release (vRELEASE_TAG)</h2>
        <p>Download VAPOR's weekly build, source code, and previous versions at our <a href="https://github.com/NCAR/VAPOR/releases/tag/vRELEASE_TAG">GitHub</a>.</p>
    </div>
 
@@ -50,3 +50,7 @@
            </td>
        </tr>
    </table>
+
+   <div style="text-align: center;">
+       <p>Download VAPOR's weekly build, source code, and previous versions at our <a href="https://github.com/NCAR/VAPOR/releases/tag/vRELEASE_TAG">GitHub</a>.<br><br></p>
+   </div>
