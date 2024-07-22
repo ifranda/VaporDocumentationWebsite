@@ -2,7 +2,6 @@
 
    <div style="text-align: center;">
        <h2>Download VAPOR's Latest Release (vRELEASE_TAG)</h2>
-       <p>Download VAPOR's weekly build, source code, and previous versions at our <a href="https://github.com/NCAR/VAPOR/releases/tag/vRELEASE_TAG">GitHub</a>.</p>
    </div>
 
    <table style="width: 100%; text-align: center; table-layout: fixed;">
@@ -52,5 +51,5 @@
    </table>
 
    <div style="text-align: center;">
-       <p>Download VAPOR's weekly build, source code, and previous versions at our <a href="https://github.com/NCAR/VAPOR/releases/tag/vRELEASE_TAG">GitHub</a>.<br><br></p>
+       <h3><br>Download VAPOR's weekly build, source code, and previous versions at our <a href="https://github.com/NCAR/VAPOR/releases/tag/vRELEASE_TAG">GitHub</a>.<br><br></h3>
    </div>
