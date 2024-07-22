@@ -35,12 +35,12 @@
                <table style="width: 100%; text-align: center;">
                    <tr>
                        <td style="border: none;">
-                           <a href="https://github.com/NCAR/VAPOR/releases/download/vRELEASE_TAG/VAPOR3-RELEASE_TAG-MacOS-M1.dmg" style="display: inline-block; width: 120px; height: 50px; padding: 0; font-size: 16px; font-weight: bold; text-align: center; line-height: 50px; text-decoration: none; color: #fff; background-color: #17a2b8; border: none; border-radius: 0; margin: 10px 2px; cursor: pointer;" onclick="gtag('event', 'click', { 'event_category': 'Downloads', 'event_label': 'MacOS_M1' });">
-                               <img src="_images/downloadIcon.svg" alt="Download" style="width: 17px; vertical-align: middle; margin-right: 8px; background: none;">Mac M1
+                           <a href="https://github.com/NCAR/VAPOR/releases/download/vRELEASE_TAG/VAPOR3-RELEASE_TAG-MacOS-M1.dmg" style="display: inline-block; width: 150px; height: 50px; padding: 0; font-size: 16px; font-weight: bold; text-align: center; line-height: 50px; text-decoration: none; color: #fff; background-color: #17a2b8; border: none; border-radius: 0; margin: 10px 2px; cursor: pointer;" onclick="gtag('event', 'click', { 'event_category': 'Downloads', 'event_label': 'MacOS_M1' });">
+                               <img src="_images/downloadIcon.svg" alt="Download" style="width: 17px; vertical-align: middle; margin-right: 8px; background: none;">Mac Silicon
                            </a>
                        </td>
                        <td style="border: none;">
-                           <a href="https://github.com/NCAR/VAPOR/releases/download/vRELEASE_TAG/VAPOR3-RELEASE_TAG-MacOS-x86.dmg" style="display: inline-block; width: 120px; height: 50px; padding: 0; font-size: 16px; font-weight: bold; text-align: center; line-height: 50px; text-decoration: none; color: #fff; background-color: #17a2b8; border: none; border-radius: 0; margin: 10px 2px; cursor: pointer;" onclick="gtag('event', 'click', { 'event_category': 'Downloads', 'event_label': 'MacOS_x86' });">
+                           <a href="https://github.com/NCAR/VAPOR/releases/download/vRELEASE_TAG/VAPOR3-RELEASE_TAG-MacOS-x86.dmg" style="display: inline-block; width: 150px; height: 50px; padding: 0; font-size: 16px; font-weight: bold; text-align: center; line-height: 50px; text-decoration: none; color: #fff; background-color: #17a2b8; border: none; border-radius: 0; margin: 10px 2px; cursor: pointer;" onclick="gtag('event', 'click', { 'event_category': 'Downloads', 'event_label': 'MacOS_x86' });">
                                <img src="_images/downloadIcon.svg" alt="Download" style="width: 17px; vertical-align: middle; margin-right: 8px; background: none;">Mac x86
                            </a>
                        </td>
@@ -51,5 +51,5 @@
    </table>
 
    <div style="text-align: center;">
-       <h3><br>Download VAPOR's weekly build, source code, and previous versions at our <a href="https://github.com/NCAR/VAPOR/releases/tag/vRELEASE_TAG">GitHub</a>.<br><br></h3>
+       <h5><br>For VAPOR's weekly build, source code, and previous versions checkout our <a href="https://github.com/NCAR/VAPOR/releases/tag/vRELEASE_TAG">GitHub</a>.<br><br></h5>
    </div>
