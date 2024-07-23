@@ -4,9 +4,6 @@ on:
   repository_dispatch:
     types: [update-docs]
   workflow_dispatch:
-  push:
-    branches:
-        - Actions
 
 jobs:
   update-docs:
