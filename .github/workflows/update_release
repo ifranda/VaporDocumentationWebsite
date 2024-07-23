@@ -35,7 +35,7 @@ jobs:
 
       - name: Update docs/announcements/current.rst
         run: |
-          current_name="docs/announcements/current.rst"
+          current_name="docs/current.rst"
           echo ".. _current:" > "$current_name"
           echo "" >> "$current_name"
           echo "Current Release" >> "$current_name"
