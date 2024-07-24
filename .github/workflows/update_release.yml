@@ -13,8 +13,6 @@ jobs:
     steps:
       - name: Checkout VaporDocumentationWebsite repo
         uses: actions/checkout@v4
-        with:
-            ref: 'Actions'
 
       - name: Install jq
         run: sudo apt-get install -y jq
@@ -30,7 +28,7 @@ jobs:
           echo "$release_notes" >> $GITHUB_ENV
           echo "EOF" >> $GITHUB_ENV
 
-      - name: Update docs/announcements/current.rst
+      - name: Update docs/current.rst
         run: |
           current_name="docs/current.rst"
           echo ".. _current:" > "$current_name"
