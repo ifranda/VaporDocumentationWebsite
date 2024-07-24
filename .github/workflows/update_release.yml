@@ -88,8 +88,5 @@ jobs:
           make html
           cp -r html/* ../
 
-      - name: Commit and push changes
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "Release ${{ env.RELEASE_NAME }}"
-          branch: Actions
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
